@@ -451,7 +451,6 @@ var routes = [
     { path: 'youtube', redirectTo: '/youtube', pathMatch: 'full' },
     { path: 'oauth2', redirectTo: '/oauth2', pathMatch: 'full' },
     { path: 'misc', redirectTo: '/misc', pathMatch: 'full' }
-    //{path: '**',component: PageNotFoundComponent}
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -573,12 +572,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _oauth2_oauth2_module__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./oauth2/oauth2.module */ "./src/app/oauth2/oauth2.module.ts");
 /* harmony import */ var _misc_misc_module__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./misc/misc.module */ "./src/app/misc/misc.module.ts");
 /* harmony import */ var _directive_directive_module__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./directive/directive.module */ "./src/app/directive/directive.module.ts");
+/* harmony import */ var _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./page-not-found/page-not-found.component */ "./src/app/page-not-found/page-not-found.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -634,8 +635,8 @@ var AppModule = /** @class */ (function () {
                 _util_ageValidator__WEBPACK_IMPORTED_MODULE_16__["AgeValidator"],
                 _table_table_component__WEBPACK_IMPORTED_MODULE_21__["TableComponent"],
                 _charts_charts_component__WEBPACK_IMPORTED_MODULE_22__["ChartsComponent"],
-                _recaptcha_recaptcha_component__WEBPACK_IMPORTED_MODULE_28__["RecaptchaComponent"]
-                //PageNotFoundComponent
+                _recaptcha_recaptcha_component__WEBPACK_IMPORTED_MODULE_28__["RecaptchaComponent"],
+                _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_35__["PageNotFoundComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -1805,7 +1806,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  dashboard works! {{dateMessage}}\r\n</p>\r\n\r\nGit Hub User Name <input type=\"text\" [(ngModel)]=\"userName\">\r\n<button (click)=\"search()\">Button</button>\r\n\r\n<div *ngIf=\"response\">\r\n  <p>Login: {{response.login}}</p>\r\n  <p>URL: {{response.html_url}}</p>\r\n  <p>Followers Url: {{response.followers_url}}</p>\r\n  <p>Subscription Url: {{response.subscriptions_url}}</p>\r\n  <p>Events Url: {{response.events_url}}</p>\r\n  <p>Node Id: {{response.node_id}} </p>\r\n\r\n</div>\r\n<p></p>\r\n<p></p>\r\n<div class=\"share-highlight\" (mouseup)=\"showSelectedText($event)\">\r\n  <h2><p> Below text for sharing to friends:</p></h2>\r\n  <p>\r\n    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's\r\n    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a\r\n    type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,\r\n    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing\r\n    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of\r\n    Lorem Ipsum.</p>\r\n\r\n  <!-- This here is the actual popup and links to social media -->\r\n  <div class=\"js-popper share-highlight__tooltip\" [style.display]=\"getStyle()\" >\r\n    <div class=\"share-highlight__tooltip-arrow\"></div>\r\n    <a target=\"_blank\" class=\"share-highlight__social-icons\" href=\"{{linkedinlink}}\"><span class=\"fa fa-linkedin\"></span></a>\r\n    <a target=\"_blank\" class=\"share-highlight__social-icons\" href=\"{{twitterlink}}\"><span class=\"fa fa-twitter\"></span></a><a\r\n      class=\"share-highlight__social-icons\" href=\"{{emaillink}}\"><span class=\"fa fa-envelope\"></span></a>\r\n  </div>\r\n</div>"
+module.exports = "<p>\r\n  dashboard works! {{dateMessage}}\r\n</p>\r\n{{s}}\r\n<script type=\"text/javascript\" language=\"javascript\" src=\"http://c.amazon-adsystem.com/aax2/assoc.js\"></script>\r\n\r\nGit Hub User Name <input type=\"text\" [(ngModel)]=\"userName\">\r\n<button (click)=\"search()\">Button</button>\r\n\r\n<div *ngIf=\"response\">\r\n  <p>Login: {{response.login}}</p>\r\n  <p>URL: {{response.html_url}}</p>\r\n  <p>Followers Url: {{response.followers_url}}</p>\r\n  <p>Subscription Url: {{response.subscriptions_url}}</p>\r\n  <p>Events Url: {{response.events_url}}</p>\r\n  <p>Node Id: {{response.node_id}} </p>\r\n\r\n</div>\r\n<p></p>\r\n<p></p>\r\n<div class=\"share-highlight\" (mouseup)=\"showSelectedText($event)\">\r\n  <h2><p> Below text for sharing to friends:</p></h2>\r\n  <p>\r\n    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's\r\n    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a\r\n    type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,\r\n    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing\r\n    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of\r\n    Lorem Ipsum.</p>\r\n\r\n  <!-- This here is the actual popup and links to social media -->\r\n  <div class=\"js-popper share-highlight__tooltip\" [style.display]=\"getStyle()\" >\r\n    <div class=\"share-highlight__tooltip-arrow\"></div>\r\n    <a target=\"_blank\" class=\"share-highlight__social-icons\" href=\"{{linkedinlink}}\"><span class=\"fa fa-linkedin\"></span></a>\r\n    <a target=\"_blank\" class=\"share-highlight__social-icons\" href=\"{{twitterlink}}\"><span class=\"fa fa-twitter\"></span></a><a\r\n      class=\"share-highlight__social-icons\" href=\"{{emaillink}}\"><span class=\"fa fa-envelope\"></span></a>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -1823,6 +1824,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var popper_js_dist_umd_popper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! popper.js/dist/umd/popper.js */ "./node_modules/popper.js/dist/umd/popper.js");
 /* harmony import */ var popper_js_dist_umd_popper_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(popper_js_dist_umd_popper_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1832,13 +1834,19 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __param = (undefined && undefined.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
 
 
 
 var DashboardComponent = /** @class */ (function () {
-    function DashboardComponent(http) {
+    function DashboardComponent(http, document, elementRef) {
         var _this = this;
         this.http = http;
+        this.document = document;
+        this.elementRef = elementRef;
         this.userName = "";
         this.selectedtext = '';
         this.twitterlink = '';
@@ -1900,13 +1908,33 @@ var DashboardComponent = /** @class */ (function () {
             console.log(_this.response);
         });
     };
+    DashboardComponent.prototype.ngAfterViewInit = function () {
+        var s = this.document.createElement('script');
+        s.type = 'text/javascript';
+        s.src = '../assets/js/amazonhorizontal.js';
+        var __this = this; //to store the current instance to call 
+        //afterScriptAdded function on onload event of 
+        //script.
+        s.onload = function () { __this.afterScriptAdded(); };
+        this.elementRef.nativeElement.appendChild(s);
+    };
+    DashboardComponent.prototype.afterScriptAdded = function () {
+        var params = {
+            width: '728',
+            height: '420px',
+        };
+        if (typeof (window['functionFromExternalScript']) === 'function') {
+            window['functionFromExternalScript'](params);
+        }
+    };
     DashboardComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-dashboard',
             template: __webpack_require__(/*! ./dashboard.component.html */ "./src/app/dashboard/dashboard.component.html"),
             styles: [__webpack_require__(/*! ./dashboard.component.css */ "./src/app/dashboard/dashboard.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+        __param(1, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["DOCUMENT"])),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], Object, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]])
     ], DashboardComponent);
     return DashboardComponent;
 }());
@@ -2984,7 +3012,7 @@ var HEROES = [
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<async-pipe></async-pipe>"
+module.exports = "<h2 class=\"center\">Async Pipe Example</h2>\r\n\r\n<div class=\"card card-block\" >\r\n        <h2>Built in Pipe </h2>\r\n        <p ngNonBindable>{{ 1234.56 | currency:'CAD' }}</p>\r\n        <p>{{ 1234.56 | currency:\"CAD\" }}</p>\r\n\r\n        <p ngNonBindable>{{ dateVal | date:'fullDate' }}</p>\r\n        <p>{{ dateVal | date: 'fullDate' }}</p>\r\n\r\n        <p ngNonBindable>{{ 3.14159265 | number: '3.1-2' }}</p>\r\n        <p>{{ 3.14159265 | number: '3.1-2' }}</p>\r\n\r\n        <p ngNonBindable>{{ jsonVal }}</p>\r\n        <p>{{ jsonVal }}</p>\r\n\r\n        <p ngNonBindable>{{ 'ASIM' | lowercase }}</p>\r\n        <p>{{ 'ASIM' | lowercase }}</p>\r\n\r\n        <p ngNonBindable>{{ 0.123456 | percent: '2.1-2' }}</p> (1)\r\n        <p>{{ 0.123456 | percent: '2.1-2' }}</p>\r\n\r\n        <p ngNonBindable>{{ [1,2,3,4,5,6] | slice:2:-1 }}</p> (3)\r\n        <p>{{ [1,2,3,4,5,6] | slice:2:-1 }}</p>\r\n\r\n    </div>\r\n    <div style=\"margin: 1em;padding:1em\"></div> \r\n   <div class=\"card card-block\" >\r\n       <h2>Difference between Subscribe and Async </h2>\r\n      <div>\r\n          <p ngNonBindable style=' font-weight: bold;'>Date change fetch using Subscribe:[ this.timeSub = interval(1000).pipe(map(val => new Date())).subscribe(val =>this.time=val);  ] </p>\r\n            Time: {{ time | date:'mediumTime' }}\r\n      </div>\r\n      <div>\r\n          <p ngNonBindable style=\" font-weight: bold;\">Date change fetch using async [time$ = interval(1000).pipe(map(val => new Date()))]</p>\r\n            Time: {{ time$ | async | date:'mediumTime' }}\r\n      </div>\r\n\r\n    \r\n\r\n   </div>\r\n   <div style=\"margin: 1em;padding:1em\"></div>\r\n   \r\n"
 
 /***/ }),
 
@@ -3003,13 +3031,12 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*!*********************************************************!*\
   !*** ./src/app/misc/async-pipe/async-pipe.component.ts ***!
   \*********************************************************/
-/*! exports provided: AsyncPipeComponent, AsyncPipeMainComponent */
+/*! exports provided: AsyncPipeComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AsyncPipeComponent", function() { return AsyncPipeComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AsyncPipeMainComponent", function() { return AsyncPipeMainComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
@@ -3027,52 +3054,123 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var AsyncPipeComponent = /** @class */ (function () {
     function AsyncPipeComponent() {
-        this.subscription = null;
-        this.promise = this.getPromise();
-        this.observable$ = this.getObservable();
-        this.subscribeObservable();
+        this.todaysDate = new Date();
+        this.time$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["interval"])(1000).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (val) { return new Date(); }));
     }
-    AsyncPipeComponent.prototype.getObservable = function () {
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["interval"])(1000).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["take"])(10), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (v) { return v * v; }));
-    };
-    // AsyncPipe subscribes to the observable automatically
-    AsyncPipeComponent.prototype.subscribeObservable = function () {
+    AsyncPipeComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.subscription = this.getObservable().subscribe(function (v) { return (_this.observableData = v); });
-    };
-    AsyncPipeComponent.prototype.getPromise = function () {
-        return new Promise(function (resolve, reject) {
-            setTimeout(function () { return resolve("Promise complete!"); }, 3000);
-        });
+        this.timeSub = Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["interval"])(1000).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (val) { return new Date(); })).subscribe(function (val) { return _this.time = val; });
     };
     // AsyncPipe unsubscribes from the observable automatically
     AsyncPipeComponent.prototype.ngOnDestroy = function () {
-        if (this.subscription) {
-            //      this.subscription.unsubscribe();
+        if (this.timeSub) {
+            this.timeSub.unsubscribe();
         }
     };
     AsyncPipeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: "async-pipe",
-            template: "\n <div class=\"card card-block\">\n  <h4 class=\"card-title\">AsyncPipe</h4>\n\n  <p class=\"card-text\" ngNonBindable>{{ promise | async }}  </p>\n  <p class=\"card-text\">{{ promise | async }}  </p>\n\n\n  <p class=\"card-text\" ngNonBindable>{{ observable$ | async }}  </p>\n  <p class=\"card-text\">{{ observable$ | async }}</p>\n\n\n  <p class=\"card-text\" ngNonBindable>{{ observableData }}  </p>\n  <p class=\"card-text\">{{ observableData }}</p>\n </div>\n  "
+            template: __webpack_require__(/*! ./async-pipe.component.html */ "./src/app/misc/async-pipe/async-pipe.component.html"),
+            styles: [__webpack_require__(/*! ./async-pipe.component.scss */ "./src/app/misc/async-pipe/async-pipe.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], AsyncPipeComponent);
     return AsyncPipeComponent;
 }());
 
-var AsyncPipeMainComponent = /** @class */ (function () {
-    function AsyncPipeMainComponent() {
-        this.imageUrl = "";
+
+
+/***/ }),
+
+/***/ "./src/app/misc/beans/Todo.ts":
+/*!************************************!*\
+  !*** ./src/app/misc/beans/Todo.ts ***!
+  \************************************/
+/*! exports provided: Todo */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Todo", function() { return Todo; });
+var Todo = /** @class */ (function () {
+    function Todo() {
     }
-    AsyncPipeMainComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-async-pipe',
-            template: __webpack_require__(/*! ./async-pipe.component.html */ "./src/app/misc/async-pipe/async-pipe.component.html"),
-            styles: [__webpack_require__(/*! ./async-pipe.component.scss */ "./src/app/misc/async-pipe/async-pipe.component.scss")]
+    return Todo;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/misc/beans/TodoList.ts":
+/*!****************************************!*\
+  !*** ./src/app/misc/beans/TodoList.ts ***!
+  \****************************************/
+/*! exports provided: TodoList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TodoList", function() { return TodoList; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var TodoList = /** @class */ (function () {
+    function TodoList() {
+        this.todos = [];
+    }
+    TodoList.prototype.add = function (todo) {
+        this.todos.push(todo);
+    };
+    TodoList.prototype.remove = function (todo) {
+        this.todos.splice(this.todos.indexOf(todo), 1);
+    };
+    TodoList.prototype.set = function (todo, index) {
+        this.todos[index] = todo;
+    };
+    TodoList.prototype.get = function (index) {
+        return this.todos[index];
+    };
+    TodoList.prototype.getAll = function () {
+        return this.todos;
+    };
+    TodoList = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
         })
-    ], AsyncPipeMainComponent);
-    return AsyncPipeMainComponent;
+    ], TodoList);
+    return TodoList;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/misc/beans/joke.ts":
+/*!************************************!*\
+  !*** ./src/app/misc/beans/joke.ts ***!
+  \************************************/
+/*! exports provided: Joke */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Joke", function() { return Joke; });
+var Joke = /** @class */ (function () {
+    function Joke(setup, punchline) {
+        this.setup = setup;
+        this.punchline = punchline;
+        this.hide = true;
+    }
+    Joke.prototype.toggle = function () {
+        this.hide = !this.hide;
+    };
+    return Joke;
 }());
 
 
@@ -3332,6 +3430,117 @@ var ShadowComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/misc/lifecycle-hooks/index.ts":
+/*!***********************************************!*\
+  !*** ./src/app/misc/lifecycle-hooks/index.ts ***!
+  \***********************************************/
+/*! exports provided: LifecycleHooksComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _lifecycle_hooks_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lifecycle-hooks.component */ "./src/app/misc/lifecycle-hooks/lifecycle-hooks.component.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "LifecycleHooksComponent", function() { return _lifecycle_hooks_component__WEBPACK_IMPORTED_MODULE_0__["LifecycleHooksComponent"]; });
+
+
+
+
+/***/ }),
+
+/***/ "./src/app/misc/lifecycle-hooks/lifecycle-hooks.component.html":
+/*!*********************************************************************!*\
+  !*** ./src/app/misc/lifecycle-hooks/lifecycle-hooks.component.html ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2 class=\"center\">Angular Life Cycle Hooks:</h2>\n\n<p>Please view console for what has changed during below operation</p>\n\n<joke *ngFor=\"let j of jokes\" [joke]=\"j\">\n  <span class=\"setup\">{{ j.setup }} ?</span>\n  <h1 class=\"punchline\">{{ j.punchline }}</h1>\n</joke>\n\n<button type=\"button\"\n        class=\"btn btn-success\"\n        (click)=\"addJoke()\">Add Joke\n</button>\n<button type=\"button\"\n        class=\"btn btn-danger\"\n        (click)=\"deleteJoke()\">Clear Jokes\n</button>"
+
+/***/ }),
+
+/***/ "./src/app/misc/lifecycle-hooks/lifecycle-hooks.component.scss":
+/*!*********************************************************************!*\
+  !*** ./src/app/misc/lifecycle-hooks/lifecycle-hooks.component.scss ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21pc2MvbGlmZWN5Y2xlLWhvb2tzL2xpZmVjeWNsZS1ob29rcy5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/misc/lifecycle-hooks/lifecycle-hooks.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/misc/lifecycle-hooks/lifecycle-hooks.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: LifecycleHooksComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LifecycleHooksComponent", function() { return LifecycleHooksComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _beans_joke__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../beans/joke */ "./src/app/misc/beans/joke.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var LifecycleHooksComponent = /** @class */ (function () {
+    function LifecycleHooksComponent() {
+        this.jokes = [];
+    }
+    LifecycleHooksComponent.prototype.addJoke = function () {
+        this.jokes.unshift(new _beans_joke__WEBPACK_IMPORTED_MODULE_1__["Joke"]("What did the cheese say when it looked in the mirror", "Hello-me (Halloumi)"));
+    };
+    LifecycleHooksComponent.prototype.deleteJoke = function () {
+        this.jokes = [];
+    };
+    LifecycleHooksComponent.prototype.ngOnChanges = function () {
+        console.log("ngOnChanges - data is " + this);
+    };
+    LifecycleHooksComponent.prototype.ngOnInit = function () {
+        console.log("ngOnInit  - data is " + this);
+    };
+    LifecycleHooksComponent.prototype.ngDoCheck = function () {
+        console.log("ngDoCheck");
+    };
+    LifecycleHooksComponent.prototype.ngAfterContentInit = function () {
+        console.log("ngAfterContentInit");
+    };
+    LifecycleHooksComponent.prototype.ngAfterContentChecked = function () {
+        console.log("ngAfterContentChecked");
+    };
+    LifecycleHooksComponent.prototype.ngAfterViewInit = function () {
+        console.log("ngAfterViewInit");
+    };
+    LifecycleHooksComponent.prototype.ngAfterViewChecked = function () {
+        console.log("ngAfterViewChecked");
+    };
+    LifecycleHooksComponent.prototype.ngOnDestroy = function () {
+        console.log("ngOnDestroy");
+    };
+    LifecycleHooksComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-lifecycle-hooks',
+            template: __webpack_require__(/*! ./lifecycle-hooks.component.html */ "./src/app/misc/lifecycle-hooks/lifecycle-hooks.component.html"),
+            styles: [__webpack_require__(/*! ./lifecycle-hooks.component.scss */ "./src/app/misc/lifecycle-hooks/lifecycle-hooks.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], LifecycleHooksComponent);
+    return LifecycleHooksComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/misc/misc-routing.module.ts":
 /*!*********************************************!*\
   !*** ./src/app/misc/misc-routing.module.ts ***!
@@ -3351,12 +3560,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _virtual_scroll_virtual_scroll_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./virtual-scroll/virtual-scroll.component */ "./src/app/misc/virtual-scroll/virtual-scroll.component.ts");
 /* harmony import */ var _view_content_view_content_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./view-content/view-content.component */ "./src/app/misc/view-content/view-content.component.ts");
 /* harmony import */ var _async_pipe_async_pipe_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./async-pipe/async-pipe.component */ "./src/app/misc/async-pipe/async-pipe.component.ts");
+/* harmony import */ var _lifecycle_hooks_lifecycle_hooks_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./lifecycle-hooks/lifecycle-hooks.component */ "./src/app/misc/lifecycle-hooks/lifecycle-hooks.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -3400,8 +3611,12 @@ var routes = [
                 component: _view_content_view_content_component__WEBPACK_IMPORTED_MODULE_7__["ViewContentComponent"]
             },
             {
-                path: 'async-pipe',
-                component: _async_pipe_async_pipe_component__WEBPACK_IMPORTED_MODULE_8__["AsyncPipeMainComponent"]
+                path: 'pipe-demo',
+                component: _async_pipe_async_pipe_component__WEBPACK_IMPORTED_MODULE_8__["AsyncPipeComponent"]
+            },
+            {
+                path: 'life-cycle',
+                component: _lifecycle_hooks_lifecycle_hooks_component__WEBPACK_IMPORTED_MODULE_9__["LifecycleHooksComponent"]
             }
         ]
     }
@@ -3429,7 +3644,7 @@ var MiscRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Welcome to Miscellaneous Examples</h2>\r\n    <nav [ngClass] = \"'child-menu'\">\r\n      <ul>\r\n<!--<li><a [routerLink]=\"['dialog']\" >Dialog Directive</a></li> -->   \t \r\n\t\t<li><a [routerLink]=\"['shadow']\">Shadow Directive</a></li>\r\n\t\t<li><a [routerLink]=\"['highlight']\" >Highlight Directive</a></li>\r\n\t\t<li><a [routerLink]=\"['changeText']\">Change Text Directive</a></li>\r\n\t\t<li><a [routerLink]=\"['drag-drop']\">Angular Drag-Drop feature</a></li>\r\n\t\t<li><a [routerLink]=\"['virtual-scroll']\">Angular Virtual Scroll feature</a></li>\r\n\t\t<li><a [routerLink]=\"['view-content']\">View/Content Child Feature</a></li>\r\n\t\t<li><a [routerLink]=\"['async-pipe']\">Async Pipe Feature</a></li>\r\n\t\r\n    </ul>  \r\n\t</nav>  \r\n\t<div [ngClass] = \"'child-container'\">\t\r\n\t  <router-outlet></router-outlet>\t\r\n\t</div>\r\n\r\n\t\r\n\r\n\r\n\r\n"
+module.exports = "<h2>Welcome to Miscellaneous Examples</h2>\r\n    <nav [ngClass] = \"'child-menu'\">\r\n      <ul>\r\n<!--<li><a [routerLink]=\"['dialog']\" >Dialog Directive</a></li> -->   \t \r\n\t\t<li><a [routerLink]=\"['shadow']\">Shadow Directive</a></li>\r\n\t\t<li><a [routerLink]=\"['highlight']\" >Highlight Directive</a></li>\r\n\t\t<li><a [routerLink]=\"['changeText']\">Change Text Directive</a></li>\r\n\t\t<li><a [routerLink]=\"['drag-drop']\">Angular Drag-Drop feature</a></li>\r\n\t\t<li><a [routerLink]=\"['virtual-scroll']\">Angular Virtual Scroll feature</a></li>\r\n\t\t<li><a [routerLink]=\"['view-content']\">View/Content Child Feature</a></li>\r\n\t\t<li><a [routerLink]=\"['pipe-demo']\">Async Pipe Feature</a></li>\r\n\t\t<li><a [routerLink]=\"['life-cycle']\">Angular Lifecycle hooks </a></li>\r\n    </ul>  \r\n\t</nav>  \r\n\t<div [ngClass] = \"'child-container'\">\t\r\n\t  <router-outlet></router-outlet>\t\r\n\t</div>\r\n\r\n\t\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -3503,12 +3718,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _view_content_view_content_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./view-content/view-content.component */ "./src/app/misc/view-content/view-content.component.ts");
 /* harmony import */ var _view_content_joke_list_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./view-content/joke.list.component */ "./src/app/misc/view-content/joke.list.component.ts");
 /* harmony import */ var _async_pipe_async_pipe_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./async-pipe/async-pipe.component */ "./src/app/misc/async-pipe/async-pipe.component.ts");
+/* harmony import */ var _lifecycle_hooks__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./lifecycle-hooks */ "./src/app/misc/lifecycle-hooks/index.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _view_content_todo_demo_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./view-content/todo.demo.component */ "./src/app/misc/view-content/todo.demo.component.ts");
+/* harmony import */ var _ng_temp_comp_ng_temp_comp_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./ng-temp-comp/ng-temp-comp.component */ "./src/app/misc/ng-temp-comp/ng-temp-comp.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
 
 
 
@@ -3540,18 +3763,89 @@ var MiscModule = /** @class */ (function () {
                 _view_content_joke_list_component__WEBPACK_IMPORTED_MODULE_12__["JokeComponent"],
                 _view_content_joke_list_component__WEBPACK_IMPORTED_MODULE_12__["JokeListComponent"],
                 _async_pipe_async_pipe_component__WEBPACK_IMPORTED_MODULE_13__["AsyncPipeComponent"],
-                _async_pipe_async_pipe_component__WEBPACK_IMPORTED_MODULE_13__["AsyncPipeMainComponent"]
+                _lifecycle_hooks__WEBPACK_IMPORTED_MODULE_14__["LifecycleHooksComponent"],
+                _view_content_todo_demo_component__WEBPACK_IMPORTED_MODULE_16__["TodoDemoComponent"],
+                _view_content_todo_demo_component__WEBPACK_IMPORTED_MODULE_16__["FooterComponent"],
+                _view_content_todo_demo_component__WEBPACK_IMPORTED_MODULE_16__["TodoAppComponent"],
+                _view_content_todo_demo_component__WEBPACK_IMPORTED_MODULE_16__["TodoComponent"],
+                _view_content_todo_demo_component__WEBPACK_IMPORTED_MODULE_16__["TodoInputComponent"],
+                _ng_temp_comp_ng_temp_comp_component__WEBPACK_IMPORTED_MODULE_17__["NgTempCompComponent"]
             ],
             imports: [
                 _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                 _misc_routing_module__WEBPACK_IMPORTED_MODULE_2__["MiscRoutingModule"],
                 _directive_directive_module__WEBPACK_IMPORTED_MODULE_5__["DirectiveModule"],
                 _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_9__["DragDropModule"],
-                _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_10__["ScrollingModule"]
-            ]
+                _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_10__["ScrollingModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_15__["FormsModule"]
+            ],
+            exports: []
         })
     ], MiscModule);
     return MiscModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/misc/ng-temp-comp/ng-temp-comp.component.html":
+/*!***************************************************************!*\
+  !*** ./src/app/misc/ng-temp-comp/ng-temp-comp.component.html ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  ng-temp-comp works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/misc/ng-temp-comp/ng-temp-comp.component.scss":
+/*!***************************************************************!*\
+  !*** ./src/app/misc/ng-temp-comp/ng-temp-comp.component.scss ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21pc2MvbmctdGVtcC1jb21wL25nLXRlbXAtY29tcC5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/misc/ng-temp-comp/ng-temp-comp.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/misc/ng-temp-comp/ng-temp-comp.component.ts ***!
+  \*************************************************************/
+/*! exports provided: NgTempCompComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgTempCompComponent", function() { return NgTempCompComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var NgTempCompComponent = /** @class */ (function () {
+    function NgTempCompComponent() {
+    }
+    NgTempCompComponent.prototype.ngOnInit = function () {
+    };
+    NgTempCompComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-ng-temp-comp',
+            template: __webpack_require__(/*! ./ng-temp-comp.component.html */ "./src/app/misc/ng-temp-comp/ng-temp-comp.component.html"),
+            styles: [__webpack_require__(/*! ./ng-temp-comp.component.scss */ "./src/app/misc/ng-temp-comp/ng-temp-comp.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], NgTempCompComponent);
+    return NgTempCompComponent;
 }());
 
 
@@ -3571,7 +3865,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JokeListComponent", function() { return JokeListComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _joke__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./joke */ "./src/app/misc/view-content/joke.ts");
+/* harmony import */ var _beans_joke__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../beans/joke */ "./src/app/misc/beans/joke.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3588,7 +3882,7 @@ var JokeComponent = /** @class */ (function () {
     }
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])("joke"),
-        __metadata("design:type", _joke__WEBPACK_IMPORTED_MODULE_1__["Joke"])
+        __metadata("design:type", _beans_joke__WEBPACK_IMPORTED_MODULE_1__["Joke"])
     ], JokeComponent.prototype, "data", void 0);
     JokeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -3602,8 +3896,8 @@ var JokeComponent = /** @class */ (function () {
 var JokeListComponent = /** @class */ (function () {
     function JokeListComponent() {
         this.jokes = [
-            new _joke__WEBPACK_IMPORTED_MODULE_1__["Joke"]("What did the cheese say when it looked in the mirror", "Hello-me (Halloumi)"),
-            new _joke__WEBPACK_IMPORTED_MODULE_1__["Joke"]("What kind of cheese do you use to disguise a small horse", "Mask-a-pony (Mascarpone)")
+            new _beans_joke__WEBPACK_IMPORTED_MODULE_1__["Joke"]("What did the cheese say when it looked in the mirror", "Hello-me (Halloumi)"),
+            new _beans_joke__WEBPACK_IMPORTED_MODULE_1__["Joke"]("What kind of cheese do you use to disguise a small horse", "Mask-a-pony (Mascarpone)")
         ];
         console.log("new - jokeViewChild is " + this.jokeViewChild);
         console.log("new - jokeContentChild is " + this.jokeContentChild);
@@ -3648,7 +3942,7 @@ var JokeListComponent = /** @class */ (function () {
 
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.joke = new _joke__WEBPACK_IMPORTED_MODULE_1__["Joke"]("A kid threw a lump of cheddar at me", "I thought ‘That’s not very mature’");
+        this.joke = new _beans_joke__WEBPACK_IMPORTED_MODULE_1__["Joke"]("A kid threw a lump of cheddar at me", "I thought ‘That’s not very mature’");
     }
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -3663,26 +3957,138 @@ var AppComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/misc/view-content/joke.ts":
-/*!*******************************************!*\
-  !*** ./src/app/misc/view-content/joke.ts ***!
-  \*******************************************/
-/*! exports provided: Joke */
+/***/ "./src/app/misc/view-content/todo.demo.component.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/misc/view-content/todo.demo.component.ts ***!
+  \**********************************************************/
+/*! exports provided: TodoComponent, TodoInputComponent, FooterComponent, TodoAppComponent, TodoDemoComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Joke", function() { return Joke; });
-var Joke = /** @class */ (function () {
-    function Joke(setup, punchline) {
-        this.setup = setup;
-        this.punchline = punchline;
-        this.hide = true;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TodoComponent", function() { return TodoComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TodoInputComponent", function() { return TodoInputComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TodoAppComponent", function() { return TodoAppComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TodoDemoComponent", function() { return TodoDemoComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _beans_TodoList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../beans/TodoList */ "./src/app/misc/beans/TodoList.ts");
+/* harmony import */ var _beans_Todo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../beans/Todo */ "./src/app/misc/beans/Todo.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var TodoComponent = /** @class */ (function () {
+    function TodoComponent() {
+        this.onCompletionChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
     }
-    Joke.prototype.toggle = function () {
-        this.hide = !this.hide;
+    TodoComponent.prototype.completionChanged = function (todo) {
+        this.onCompletionChange.emit(todo);
     };
-    return Joke;
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
+        __metadata("design:type", Object)
+    ], TodoComponent.prototype, "onCompletionChange", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", _beans_Todo__WEBPACK_IMPORTED_MODULE_2__["Todo"])
+    ], TodoComponent.prototype, "todo", void 0);
+    TodoComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'todo-item',
+            styles: [
+                ".completed {\n      text-decoration: line-through;\n    }"
+            ],
+            template: "\n    <div [class.completed]=\"todo.completed\">\n      <input type=\"checkbox\"\n        [(ngModel)]=\"todo.completed\"\n        (change)=\"completionChanged(todo)\">\n      {{todo.title}}\n    </div>\n  "
+        })
+    ], TodoComponent);
+    return TodoComponent;
+}());
+
+var TodoInputComponent = /** @class */ (function () {
+    function TodoInputComponent() {
+        this.onTodo = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+    }
+    TodoInputComponent.prototype.addTodo = function () {
+        this.onTodo.emit({
+            title: this.title,
+            completed: false
+        });
+        this.title = '';
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
+        __metadata("design:type", Object)
+    ], TodoInputComponent.prototype, "onTodo", void 0);
+    TodoInputComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'todo-input',
+            template: "\n    <input type=\"text\" [(ngModel)]=\"title\">\n    <button (click)=\"addTodo()\">Add</button>\n  "
+        })
+    ], TodoInputComponent);
+    return TodoInputComponent;
+}());
+
+var FooterComponent = /** @class */ (function () {
+    function FooterComponent(todos) {
+        this.todos = todos;
+    }
+    FooterComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-footer',
+            template: '<ng-content></ng-content>'
+        }),
+        __metadata("design:paramtypes", [_beans_TodoList__WEBPACK_IMPORTED_MODULE_1__["TodoList"]])
+    ], FooterComponent);
+    return FooterComponent;
+}());
+
+var TodoAppComponent = /** @class */ (function () {
+    function TodoAppComponent(todos) {
+        this.todos = todos;
+    }
+    TodoAppComponent.prototype.addTodo = function (todo) {
+        this.todos.add(todo);
+    };
+    TodoAppComponent.prototype.ngAfterViewInit = function () {
+        // console.log(this.input);
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])(TodoInputComponent),
+        __metadata("design:type", TodoInputComponent)
+    ], TodoAppComponent.prototype, "input", void 0);
+    TodoAppComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'todo-app',
+            viewProviders: [_beans_TodoList__WEBPACK_IMPORTED_MODULE_1__["TodoList"]],
+            template: "\n    <section>\n      Add todo:\n      <todo-input (onTodo)=\"addTodo($event)\"></todo-input>\n    </section>\n    <section>\n      <h4 *ngIf=\"todos.getAll().length\">Todo list</h4>\n      <todo-item *ngFor=\"let todo of todos.getAll()\" [todo]=\"todo\">\n      </todo-item>\n    </section>\n    <ng-content select=\"app-footer\"></ng-content>\n  "
+        }),
+        __metadata("design:paramtypes", [_beans_TodoList__WEBPACK_IMPORTED_MODULE_1__["TodoList"]])
+    ], TodoAppComponent);
+    return TodoAppComponent;
+}());
+
+var TodoDemoComponent = /** @class */ (function () {
+    function TodoDemoComponent() {
+    }
+    TodoDemoComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'demo-app',
+            styles: [
+                'todo-app { margin-top: 20px; margin-left: 20px; }'
+            ],
+            template: "\n    <content>\n      <todo-app>\n        <app-footer>\n          <small>Yet another todo app!</small>\n        </app-footer>\n      </todo-app>\n    </content>\n  "
+        })
+    ], TodoDemoComponent);
+    return TodoDemoComponent;
 }());
 
 
@@ -3696,7 +4102,7 @@ var Joke = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app></app>"
+module.exports = "<h2 class=\"center\">View Child and Content Child Example</h2>\r\n\r\n<div class=\"card card-block\">\r\n    <app></app>\r\n\r\n</div>\r\n<div style=\"margin: 1em;padding:1em\"></div>\r\n<div class=\"card card-block\">\r\n    <h3 class=\"center\">View Child,Content Child, ng-content Example</h3>\r\n    <demo-app></demo-app>\r\n</div>"
 
 /***/ }),
 
@@ -4163,6 +4569,69 @@ var Oauth2Module = /** @class */ (function () {
         })
     ], Oauth2Module);
     return Oauth2Module;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/page-not-found/page-not-found.component.css":
+/*!*************************************************************!*\
+  !*** ./src/app/page-not-found/page-not-found.component.css ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2Utbm90LWZvdW5kL3BhZ2Utbm90LWZvdW5kLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/page-not-found/page-not-found.component.html":
+/*!**************************************************************!*\
+  !*** ./src/app/page-not-found/page-not-found.component.html ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  page-not-found works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/page-not-found/page-not-found.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/page-not-found/page-not-found.component.ts ***!
+  \************************************************************/
+/*! exports provided: PageNotFoundComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageNotFoundComponent", function() { return PageNotFoundComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PageNotFoundComponent = /** @class */ (function () {
+    function PageNotFoundComponent() {
+    }
+    PageNotFoundComponent.prototype.ngOnInit = function () {
+    };
+    PageNotFoundComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-page-not-found',
+            template: __webpack_require__(/*! ./page-not-found.component.html */ "./src/app/page-not-found/page-not-found.component.html"),
+            styles: [__webpack_require__(/*! ./page-not-found.component.css */ "./src/app/page-not-found/page-not-found.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], PageNotFoundComponent);
+    return PageNotFoundComponent;
 }());
 
 
