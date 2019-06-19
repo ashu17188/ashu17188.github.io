@@ -3437,6 +3437,300 @@ var ShadowComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/misc/input-output/CountdownTimerComponent.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/misc/input-output/CountdownTimerComponent.ts ***!
+  \**************************************************************/
+/*! exports provided: CountdownTimerComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountdownTimerComponent", function() { return CountdownTimerComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var CountdownTimerComponent = /** @class */ (function () {
+    function CountdownTimerComponent() {
+        this.intervalId = 0;
+        this.message = '';
+        this.seconds = 11;
+    }
+    CountdownTimerComponent.prototype.clearTimer = function () { clearInterval(this.intervalId); };
+    CountdownTimerComponent.prototype.ngOnInit = function () {
+        this.start();
+    };
+    CountdownTimerComponent.prototype.ngOnDestroy = function () {
+    };
+    CountdownTimerComponent.prototype.start = function () { this.countDown(); };
+    CountdownTimerComponent.prototype.stop = function () {
+        this.clearTimer();
+        this.message = "Holding at T-" + this.seconds + " seconds.";
+    };
+    CountdownTimerComponent.prototype.countDown = function () {
+        var _this = this;
+        this.clearTimer();
+        this.intervalId = window.setInterval(function () {
+            _this.seconds -= 1;
+            if (_this.seconds == 0) {
+                _this.message = 'Blast off';
+            }
+            else {
+                if (_this.seconds < 0) {
+                    _this.seconds = 11;
+                }
+                _this.message = "T- " + _this.seconds + " seconds and counting.";
+            }
+        }, 1000);
+    };
+    CountdownTimerComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'child-timer',
+            template: "<p>{{message}}</p>"
+        })
+    ], CountdownTimerComponent);
+    return CountdownTimerComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/misc/input-output/CountdownTimerParentComponent.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/misc/input-output/CountdownTimerParentComponent.ts ***!
+  \********************************************************************/
+/*! exports provided: CountdownTimerParentComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountdownTimerParentComponent", function() { return CountdownTimerParentComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var CountdownTimerParentComponent = /** @class */ (function () {
+    function CountdownTimerParentComponent() {
+    }
+    CountdownTimerParentComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'parent-timer',
+            template: "\n        <h2>Parent interacts with child via local variable</h2>\n        <h3>Count down to lift off</h3>\n        <button (click)=\"timer.start()\">Start</button>\n        <button (click)=\"timer.stop()\">Stop</button>\n\n        <div class=\"seconds\">{{timer.seconds}}</div>\n        <child-timer #timer></child-timer>\n\n        <p>The local variable approach is simple and easy. But it is limited because the parent-child wiring must be done entirely within the parent template. The parent component itself has no access to the child.\n\n        You can't use the local variable technique if an instance of the parent component class must read or write child component values or must call child component methods.\n        \n        When the parent component class requires that kind of access, inject the child component into the parent as a ViewChild.</p>\n    ",
+            styles: [__webpack_require__(/*! ./input-output.component.scss */ "./src/app/misc/input-output/input-output.component.scss")]
+        })
+    ], CountdownTimerParentComponent);
+    return CountdownTimerParentComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/misc/input-output/VersionChildComponent.ts":
+/*!************************************************************!*\
+  !*** ./src/app/misc/input-output/VersionChildComponent.ts ***!
+  \************************************************************/
+/*! exports provided: VersionChildComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VersionChildComponent", function() { return VersionChildComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var VersionChildComponent = /** @class */ (function () {
+    function VersionChildComponent() {
+        this.changeLog = [];
+    }
+    VersionChildComponent.prototype.ngOnChanges = function (changes) {
+        var log = [];
+        for (var propName in changes) {
+            var changedProp = changes[propName];
+            var to = JSON.stringify(changedProp.currentValue);
+            if (changedProp.isFirstChange()) {
+                log.push("Initial value of " + propName + " set to " + to);
+            }
+            else {
+                var from = JSON.stringify(changedProp.previousValue);
+                log.push(propName + " changed from " + from + " to " + to);
+            }
+        }
+        this.changeLog.push(log.join(', '));
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Number)
+    ], VersionChildComponent.prototype, "minor", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Number)
+    ], VersionChildComponent.prototype, "major", void 0);
+    VersionChildComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'version-child',
+            template: "\n    <h2>Version {{major}}.{{minor}}</h2>\n    <h4>Change log:</h4>\n    <ul>\n        <li *ngFor=\"let change of changeLog\">{{change}}</li>\n    </ul>\n    "
+        })
+    ], VersionChildComponent);
+    return VersionChildComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/misc/input-output/VersionParentComponent.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/misc/input-output/VersionParentComponent.ts ***!
+  \*************************************************************/
+/*! exports provided: VersionParentComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VersionParentComponent", function() { return VersionParentComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var VersionParentComponent = /** @class */ (function () {
+    function VersionParentComponent() {
+        this.minor = 1;
+        this.major = 20;
+    }
+    VersionParentComponent.prototype.Minor = function () {
+        this.minor++;
+    };
+    VersionParentComponent.prototype.Major = function () {
+        this.major++;
+        this.minor = 0;
+    };
+    VersionParentComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'version-parent',
+            template: "\n    <h2>Intercept input property changes with ngOnChanges()</h2>\n    <h2>Source code version:</h2>\n    <button (click)=\"Minor()\" >New Minor Version</button>\n    <button (click)=\"Major()\" >New Major Version</button>\n\n    <version-child [major]=\"major\" [minor]=\"minor\" ></version-child>\n    "
+        })
+    ], VersionParentComponent);
+    return VersionParentComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/misc/input-output/VoteTakerComponent.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/misc/input-output/VoteTakerComponent.ts ***!
+  \*********************************************************/
+/*! exports provided: VoteTakerComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VoteTakerComponent", function() { return VoteTakerComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var VoteTakerComponent = /** @class */ (function () {
+    function VoteTakerComponent() {
+        this.agreed = 0;
+        this.disAgreed = 0;
+        this.voters = ["Alphons", "Victor", "Duke"];
+    }
+    VoteTakerComponent.prototype.onVoted = function (agreed) {
+        agreed ? this.agreed++ : this.disAgreed++;
+    };
+    VoteTakerComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-vote-taker',
+            template: "\n        <h2>Parent listens for child event</h2>\n        <h2>Should we colonize universe:</h2>\n        <h3>Agreed : {{agreed}} , Diagree :{{disAgreed}}</h3>\n        <app-voter *ngFor=\"let vote of voters\" [name]=\"vote\" (voted)=\"onVoted($event)\" ></app-voter>\n    "
+        })
+    ], VoteTakerComponent);
+    return VoteTakerComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/misc/input-output/VoterComponent.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/misc/input-output/VoterComponent.ts ***!
+  \*****************************************************/
+/*! exports provided: VoterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VoterComponent", function() { return VoterComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var VoterComponent = /** @class */ (function () {
+    function VoterComponent() {
+        this.voted = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.didVote = false;
+    }
+    VoterComponent.prototype.vote = function (agreed) {
+        this.voted.emit(agreed);
+        this.didVote = true;
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String)
+    ], VoterComponent.prototype, "name", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
+        __metadata("design:type", Object)
+    ], VoterComponent.prototype, "voted", void 0);
+    VoterComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-voter',
+            template: "\n    <h3>{{name}}</h3>\n    <button (click)=\"vote(true)\" [disabled]=\"didVote\">Agree</button>\n    <button (click)=\"vote(false)\" [disabled]=\"didVote\">DisAgree</button>\n    "
+        })
+    ], VoterComponent);
+    return VoterComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/misc/input-output/child.component.html":
 /*!********************************************************!*\
   !*** ./src/app/misc/input-output/child.component.html ***!
@@ -3444,7 +3738,7 @@ var ShadowComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h3>Child Component</h3>\r\n\r\n<label>Child Component</label>\r\n<input type=\"text\" #ccomponent (keyup) = \"onChange(ccomponent.value)\"/>\r\n\r\n<p>Value of parent component is: {{ PData }}</p>"
+module.exports = "<h3>Child Component</h3>\r\n<div class=\"card card-block\" >\r\n\r\n<label>Child Component</label>\r\n<input type=\"text\" #ccomponent (keyup) = \"onChange(ccomponent.value)\"/>\r\n\r\n<p>Value of parent component is: {{ PData }}</p>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -3500,6 +3794,147 @@ var ChildComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/misc/input-output/child2.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/misc/input-output/child2.component.ts ***!
+  \*******************************************************/
+/*! exports provided: Child2Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Child2Component", function() { return Child2Component; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _hero__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hero */ "./src/app/misc/input-output/hero.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var Child2Component = /** @class */ (function () {
+    function Child2Component() {
+    }
+    Object.defineProperty(Child2Component.prototype, "masterName", {
+        get: function () {
+            return this._masterName;
+        },
+        set: function (value) {
+            this._masterName = (value && value.trim()) || 'value not set from parent';
+        },
+        enumerable: true,
+        configurable: true
+    });
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", _hero__WEBPACK_IMPORTED_MODULE_1__["Hero"])
+    ], Child2Component.prototype, "hero", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])('master'),
+        __metadata("design:type", String),
+        __metadata("design:paramtypes", [String])
+    ], Child2Component.prototype, "masterName", null);
+    Child2Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-child',
+            template: "\n    <div class='container'>\n     <h3>{{hero.name}}</h3>\n     <p>I , {{hero.name}} is available for your service {{_masterName}}. </p>\n    </div>\n    "
+        })
+    ], Child2Component);
+    return Child2Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/misc/input-output/hero.ts":
+/*!*******************************************!*\
+  !*** ./src/app/misc/input-output/hero.ts ***!
+  \*******************************************/
+/*! exports provided: Hero, HEROES */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Hero", function() { return Hero; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HEROES", function() { return HEROES; });
+var Hero = /** @class */ (function () {
+    function Hero() {
+    }
+    return Hero;
+}());
+
+var HEROES = [
+    { name: "Johnson" },
+    { name: "Sachin Tendulkar" },
+    { name: "Jonty" }
+];
+
+
+/***/ }),
+
+/***/ "./src/app/misc/input-output/index.ts":
+/*!********************************************!*\
+  !*** ./src/app/misc/input-output/index.ts ***!
+  \********************************************/
+/*! exports provided: InputOutputComponent, CountdownTimerComponent, CountdownTimerParentComponent, VersionChildComponent, VersionParentComponent, VoteTakerComponent, VoterComponent, ChildComponent, Child2Component, Parent2Component, ParentComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CountdownTimerComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CountdownTimerComponent */ "./src/app/misc/input-output/CountdownTimerComponent.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CountdownTimerComponent", function() { return _CountdownTimerComponent__WEBPACK_IMPORTED_MODULE_0__["CountdownTimerComponent"]; });
+
+/* harmony import */ var _CountdownTimerParentComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CountdownTimerParentComponent */ "./src/app/misc/input-output/CountdownTimerParentComponent.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CountdownTimerParentComponent", function() { return _CountdownTimerParentComponent__WEBPACK_IMPORTED_MODULE_1__["CountdownTimerParentComponent"]; });
+
+/* harmony import */ var _VersionChildComponent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./VersionChildComponent */ "./src/app/misc/input-output/VersionChildComponent.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "VersionChildComponent", function() { return _VersionChildComponent__WEBPACK_IMPORTED_MODULE_2__["VersionChildComponent"]; });
+
+/* harmony import */ var _VersionParentComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./VersionParentComponent */ "./src/app/misc/input-output/VersionParentComponent.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "VersionParentComponent", function() { return _VersionParentComponent__WEBPACK_IMPORTED_MODULE_3__["VersionParentComponent"]; });
+
+/* harmony import */ var _VoteTakerComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./VoteTakerComponent */ "./src/app/misc/input-output/VoteTakerComponent.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "VoteTakerComponent", function() { return _VoteTakerComponent__WEBPACK_IMPORTED_MODULE_4__["VoteTakerComponent"]; });
+
+/* harmony import */ var _VoterComponent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./VoterComponent */ "./src/app/misc/input-output/VoterComponent.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "VoterComponent", function() { return _VoterComponent__WEBPACK_IMPORTED_MODULE_5__["VoterComponent"]; });
+
+/* harmony import */ var _child_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./child.component */ "./src/app/misc/input-output/child.component.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ChildComponent", function() { return _child_component__WEBPACK_IMPORTED_MODULE_6__["ChildComponent"]; });
+
+/* harmony import */ var _child2_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./child2.component */ "./src/app/misc/input-output/child2.component.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Child2Component", function() { return _child2_component__WEBPACK_IMPORTED_MODULE_7__["Child2Component"]; });
+
+/* harmony import */ var _input_output_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./input-output.component */ "./src/app/misc/input-output/input-output.component.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "InputOutputComponent", function() { return _input_output_component__WEBPACK_IMPORTED_MODULE_8__["InputOutputComponent"]; });
+
+/* harmony import */ var _parent_2component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./parent.2component */ "./src/app/misc/input-output/parent.2component.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Parent2Component", function() { return _parent_2component__WEBPACK_IMPORTED_MODULE_9__["Parent2Component"]; });
+
+/* harmony import */ var _parent_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./parent.component */ "./src/app/misc/input-output/parent.component.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ParentComponent", function() { return _parent_component__WEBPACK_IMPORTED_MODULE_10__["ParentComponent"]; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+
 /***/ "./src/app/misc/input-output/input-output.component.html":
 /*!***************************************************************!*\
   !*** ./src/app/misc/input-output/input-output.component.html ***!
@@ -3507,7 +3942,7 @@ var ChildComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"center\">@Input, @Output Example</h2>\n\n<div class=\"card card-block\" >\n  <h1>\n    Welcome to {{ title }}!\n  </h1>\n  <input-output-parent></input-output-parent>\n</div>"
+module.exports = "<h2 class=\"center\">@Input, @Output Example</h2>\n\n<div class=\"card card-block\" >\n  <h1>\n    Welcome to {{ title }}!\n  </h1>\n  <input-output-parent></input-output-parent>\n</div>\n<div class=\"card  card-block\">\n  <div class=\"card-body\">\n      <app-parent></app-parent> \n\n  </div>\n</div>\n<div class=\"card  card-block\">\n  <div class=\"card-body\">\n      <app-vote-taker></app-vote-taker>\n  </div>\n</div>\n<div class=\"card  card-block\">\n  <div class=\"card-body\">\n      <version-parent></version-parent>\n  </div>\n</div>\n<div class=\"card  card-block\">\n  <div class=\"card-body\">\n      <parent-timer></parent-timer>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -3518,7 +3953,7 @@ module.exports = "<h2 class=\"center\">@Input, @Output Example</h2>\n\n<div clas
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21pc2MvaW5wdXQtb3V0cHV0L2lucHV0LW91dHB1dC5jb21wb25lbnQuc2NzcyJ9 */"
+module.exports = "/* Component Communication cookbook specific styles */\n.seconds {\n  background-color: black;\n  color: red;\n  font-size: 3em;\n  margin: 0.3em 0;\n  text-align: center;\n  width: 1.5em; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWlzYy9pbnB1dC1vdXRwdXQvQzpcXFdvcmtcXEphdmFQcm9qZWN0c1xcV2VzYnNpdGVzXFxJbnN1cmVkV2Vic2l0ZVxcYW5ndWxhci1mcm9udGVuZC9zcmNcXGFwcFxcbWlzY1xcaW5wdXQtb3V0cHV0XFxpbnB1dC1vdXRwdXQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsc0RBQXNEO0FBQ3REO0VBQ0ksd0JBQXVCO0VBQ3ZCLFdBQVU7RUFDVixlQUFjO0VBQ2QsZ0JBQWU7RUFDZixtQkFBa0I7RUFDbEIsYUFBWSxFQUNiIiwiZmlsZSI6InNyYy9hcHAvbWlzYy9pbnB1dC1vdXRwdXQvaW5wdXQtb3V0cHV0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogQ29tcG9uZW50IENvbW11bmljYXRpb24gY29va2Jvb2sgc3BlY2lmaWMgc3R5bGVzICovXHJcbi5zZWNvbmRzIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gICAgY29sb3I6IHJlZDtcclxuICAgIGZvbnQtc2l6ZTogM2VtO1xyXG4gICAgbWFyZ2luOiAwLjNlbSAwO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgd2lkdGg6IDEuNWVtO1xyXG4gIH0iXX0= */"
 
 /***/ }),
 
@@ -3564,6 +3999,44 @@ var InputOutputComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/misc/input-output/parent.2component.ts":
+/*!********************************************************!*\
+  !*** ./src/app/misc/input-output/parent.2component.ts ***!
+  \********************************************************/
+/*! exports provided: Parent2Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Parent2Component", function() { return Parent2Component; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _hero__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hero */ "./src/app/misc/input-output/hero.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var Parent2Component = /** @class */ (function () {
+    function Parent2Component() {
+        this.heroes = _hero__WEBPACK_IMPORTED_MODULE_1__["HEROES"];
+        this.master = 'Master';
+    }
+    Parent2Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-parent',
+            template: "\n    <h2>Intercept input property changes with a setter</h2>\n    <h2>{{master}} control , {{heroes.length}} heroes</h2>\n    <app-child *ngFor=\"let hero of heroes\" [hero]=\"hero\" [master]=\"master\"></app-child>\n    "
+        })
+    ], Parent2Component);
+    return Parent2Component;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/misc/input-output/parent.component.html":
 /*!*********************************************************!*\
   !*** ./src/app/misc/input-output/parent.component.html ***!
@@ -3571,7 +4044,7 @@ var InputOutputComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<h3>Parent Component</h3>\r\n\r\n<label>Parent Component</label>\r\n<input type=\"text\" #pcomponent (keyup)=\"0\"/>\r\n\r\n<p>Value of child component is: {{ CData }}</p>\r\n<input-output-child [PData]=\"pcomponent.value\" (childEvent)=\"CData=$event\"></input-output-child>"
+module.exports = "\r\n<h3>Parent Component</h3>\r\n\r\n<label>Parent Component</label>\r\n<input type=\"text\" #pcomponent (keyup)=\"0\"/>\r\n\r\n<p>Value of child component is: {{ CData }}</p>\r\n<input-output-child [PData]=\"pcomponent.value\" (childEvent)=\"CData=$event\"></input-output-child>\r\n"
 
 /***/ }),
 
@@ -3586,7 +4059,6 @@ module.exports = "\r\n<h3>Parent Component</h3>\r\n\r\n<label>Parent Component</
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ParentComponent", function() { return ParentComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-// parent.component.ts
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3920,17 +4392,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _view_content_todo_demo_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./view-content/todo.demo.component */ "./src/app/misc/view-content/todo.demo.component.ts");
 /* harmony import */ var _ng_temp_comp_ng_temp_comp_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./ng-temp-comp/ng-temp-comp.component */ "./src/app/misc/ng-temp-comp/ng-temp-comp.component.ts");
-/* harmony import */ var _input_output_input_output_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./input-output/input-output.component */ "./src/app/misc/input-output/input-output.component.ts");
-/* harmony import */ var _input_output_parent_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./input-output/parent.component */ "./src/app/misc/input-output/parent.component.ts");
-/* harmony import */ var _input_output_child_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./input-output/child.component */ "./src/app/misc/input-output/child.component.ts");
+/* harmony import */ var _input_output__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./input-output */ "./src/app/misc/input-output/index.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
 
 
 
@@ -3974,9 +4442,10 @@ var MiscModule = /** @class */ (function () {
                 _view_content_todo_demo_component__WEBPACK_IMPORTED_MODULE_16__["TodoComponent"],
                 _view_content_todo_demo_component__WEBPACK_IMPORTED_MODULE_16__["TodoInputComponent"],
                 _ng_temp_comp_ng_temp_comp_component__WEBPACK_IMPORTED_MODULE_17__["NgTempCompComponent"],
-                _input_output_input_output_component__WEBPACK_IMPORTED_MODULE_18__["InputOutputComponent"],
-                _input_output_parent_component__WEBPACK_IMPORTED_MODULE_19__["ParentComponent"],
-                _input_output_child_component__WEBPACK_IMPORTED_MODULE_20__["ChildComponent"]
+                _input_output__WEBPACK_IMPORTED_MODULE_18__["Child2Component"], _input_output__WEBPACK_IMPORTED_MODULE_18__["ChildComponent"], _input_output__WEBPACK_IMPORTED_MODULE_18__["CountdownTimerComponent"],
+                _input_output__WEBPACK_IMPORTED_MODULE_18__["CountdownTimerParentComponent"], _input_output__WEBPACK_IMPORTED_MODULE_18__["InputOutputComponent"], _input_output__WEBPACK_IMPORTED_MODULE_18__["Parent2Component"],
+                _input_output__WEBPACK_IMPORTED_MODULE_18__["ParentComponent"], _input_output__WEBPACK_IMPORTED_MODULE_18__["VersionChildComponent"], _input_output__WEBPACK_IMPORTED_MODULE_18__["VersionParentComponent"], _input_output__WEBPACK_IMPORTED_MODULE_18__["VoteTakerComponent"],
+                _input_output__WEBPACK_IMPORTED_MODULE_18__["VoterComponent"]
             ],
             imports: [
                 _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
