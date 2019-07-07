@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>InsuredSoftware</title>
@@ -7,15 +8,30 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="/assets/images/icon.png">
- 
-  
-</head>
-<body>
-  <app-root></app-root>
-  <link rel="stylesheet" href="/assets/css/w3.css">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="scripts.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+<style>
+body {font-family: "Lato", sans-serif}
+</style>
+<body>
+  <app-root></app-root>
+<script src="runtime.js"></script><script src="polyfills-es5.js" nomodule></script><script src="polyfills.js"></script><script src="vendor.js"></script><script src="main.js"></script></body>
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  
+</script>
+
 </html>
