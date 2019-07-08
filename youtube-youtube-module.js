@@ -18,7 +18,7 @@ module.exports = "<input type=\"text\" class=\"form-control\" placeholder=\"Sear
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"col-sm-6 col-md-4\">\r\n  <div class=\"thumbnail\">\r\n    <img src=\"{{result.thumbnailUrl}}\">\r\n    <div class=\"caption\">\r\n      <h4>{{result.title}}</h4>\r\n      <p>{{result.description}}</p>\r\n      <p><a href=\"{{result.videoUrl}}\" class=\"btn btn-default\" role=\"button\">\r\n          Watch</a>\r\n      </p>\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"w3-card-4\">\r\n  <img src=\"{{result.thumbnailUrl}}\" alt=\"{{result.thumbnailUrl}}\" style=\"width: 100%;height: auto;\">\r\n  <h4 class=\"w3-margin\">{{result.title}}</h4>\r\n\r\n  <p>\r\n    <a href=\"{{result.videoUrl}}\" target=\"_blank\" class=\"w3-btn w3-blue w3-margin\">Watch</a>\r\n   \r\n  </p>\r\n  <hr>\r\n</div>"
 
 /***/ }),
 
@@ -29,7 +29,7 @@ module.exports = "<div class=\"col-sm-6 col-md-4\">\r\n  <div class=\"thumbnail\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class='container'>\r\n    <div class=\"page-header\">\r\n      <h2>YouTube Search\r\n        <img style=\"float: right;\" *ngIf=\"loading\" src='assets/images/loading.gif' />\r\n      </h2>\r\n    </div>\r\n  \r\n    <div class=\"row\">\r\n      <div class=\"input-group input-group-lg col-sm-8 col-md-8\">\r\n        <app-search-box (loading)=\"loading = $event\" (results)=\"updateResults($event)\"></app-search-box>\r\n      </div>\r\n    </div>\r\n  \r\n    <div class=\"row\" style=\"margin-top:20px\">\r\n      <p>{{message}}</p>\r\n      <app-search-result *ngFor=\"let result of results\" [result]=\"result\"></app-search-result>\r\n    </div>\r\n  </div>"
+module.exports = "<div class=\"page-header\">\r\n    <h2>YouTube Search\r\n      <img class=\"w3-margin\" *ngIf=\"loading\" src='assets/images/loading.gif' />\r\n    </h2>\r\n  </div>\r\n\r\n  <div class=\"w3-container w3-row\">\r\n    <app-search-box (loading)=\"loading = $event\" (results)=\"updateResults($event)\"></app-search-box>\r\n  </div>\r\n\r\n  <div class=\"w3-row w3-margin\">\r\n    <p>{{message}}</p>\r\n    <app-search-result *ngFor=\"let result of results\" [result]=\"result\"></app-search-result>\r\n  </div>"
 
 /***/ }),
 
@@ -149,6 +149,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchResultComponent", function() { return SearchResultComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _video_detail_model__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../video-detail.model */ "./src/app/youtube/video-detail.model.ts");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -160,11 +161,16 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var SearchResultComponent = /** @class */ (function () {
-    function SearchResultComponent() {
+    function SearchResultComponent(domSanitizer) {
+        this.domSanitizer = domSanitizer;
     }
     SearchResultComponent.prototype.ngOnInit = function () {
     };
+    SearchResultComponent.ctorParameters = function () { return [
+        { type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["DomSanitizer"] }
+    ]; };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
         __metadata("design:type", _video_detail_model__WEBPACK_IMPORTED_MODULE_1__["VideoDetail"])
@@ -175,7 +181,7 @@ var SearchResultComponent = /** @class */ (function () {
             template: __webpack_require__(/*! raw-loader!./search-result.component.html */ "./node_modules/raw-loader/index.js!./src/app/youtube/search-result/search-result.component.html"),
             styles: [__webpack_require__(/*! ./search-result.component.css */ "./src/app/youtube/search-result/search-result.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["DomSanitizer"]])
     ], SearchResultComponent);
     return SearchResultComponent;
 }());

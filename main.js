@@ -579,7 +579,7 @@ module.exports = "<h2 class=\"center\">Angular Life Cycle Hooks:</h2>\r\n\r\n<p>
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"w3-container\">\r\n\t<h2>Welcome to Miscellaneous Examples</h2>\r\n\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('shadowId')\" [routerLink]=\"[{ outlets: {shadowOutlet: ['shadow'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Shadow Directive</a>\r\n\t\t<div id=\"shadowId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='shadowOutlet'></router-outlet>\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('highlightId')\" [routerLink]=\"[{ outlets: {highlightOutlet: ['highlight'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Highlight Directive</a>\r\n\t\t<div id=\"highlightId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='highlightOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('changeTextId')\" [routerLink]=\"[{ outlets: {changeTextOutlet: ['changeText'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Change Text Directive</a>\r\n\t\t<div id=\"changeTextId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='changeTextOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('dragDropId')\" [routerLink]=\"[{ outlets: {dragDropOutlet: ['drag-drop'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Drag Drop</a>\r\n\t\t<div id=\"dragDropId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='dragDropOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('virtualScrollId')\"\r\n\t\t\t[routerLink]=\"[{ outlets: {virtualScrollOutlet: ['virtual-scroll'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Virtual Scroll</a>\r\n\t\t<div id=\"virtualScrollId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='virtualScrollOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('viewContentId')\" [routerLink]=\"[{ outlets: {viewContentOutlet: ['view-content'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">View Content</a>\r\n\t\t<div id=\"viewContentId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='viewContentOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('pipeDemoId')\" [routerLink]=\"[{ outlets: {pipeDemoOutlet: ['pipe-demo'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Pipe Demo</a>\r\n\t\t<div id=\"pipeDemoId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='pipeDemoOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('lifeCycleId')\" [routerLink]=\"[{ outlets: {lifeCycleOutlet: ['life-cycle'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Life cycle Demo</a>\r\n\t\t<div id=\"lifeCycleId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='lifeCycleOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('templateContainerId')\"\r\n\t\t\t[routerLink]=\"[{ outlets: {templateContainerOutlet: ['template-container'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Template Container</a>\r\n\t\t<div id=\"templateContainerId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='templateContainerOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('inputOutputId')\" [routerLink]=\"[{ outlets: {inputOutputOutlet: ['input-output'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Pipe Demo</a>\r\n\t\t<div id=\"inputOutputId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='inputOutputOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n</div>"
+module.exports = "<div class=\"w3-container\">\r\n\t<button (click)=\"goBack()\" class=\"w3-btn w3-blue\">Back</button>\r\n\r\n\t<h2>Welcome to Miscellaneous Examples</h2>\r\n\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('shadowId')\" [routerLink]=\"[{ outlets: {shadowOutlet: ['shadow'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Shadow Directive</a>\r\n\t\t<div id=\"shadowId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='shadowOutlet'></router-outlet>\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('highlightId')\" [routerLink]=\"[{ outlets: {highlightOutlet: ['highlight'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Highlight Directive</a>\r\n\t\t<div id=\"highlightId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='highlightOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('changeTextId')\" [routerLink]=\"[{ outlets: {changeTextOutlet: ['changeText'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Change Text Directive</a>\r\n\t\t<div id=\"changeTextId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='changeTextOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('dragDropId')\" [routerLink]=\"[{ outlets: {dragDropOutlet: ['drag-drop'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Drag Drop</a>\r\n\t\t<div id=\"dragDropId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='dragDropOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('virtualScrollId')\"\r\n\t\t\t[routerLink]=\"[{ outlets: {virtualScrollOutlet: ['virtual-scroll'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Virtual Scroll</a>\r\n\t\t<div id=\"virtualScrollId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='virtualScrollOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('viewContentId')\" [routerLink]=\"[{ outlets: {viewContentOutlet: ['view-content'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">View Content</a>\r\n\t\t<div id=\"viewContentId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='viewContentOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('pipeDemoId')\" [routerLink]=\"[{ outlets: {pipeDemoOutlet: ['pipe-demo'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Pipe Demo</a>\r\n\t\t<div id=\"pipeDemoId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='pipeDemoOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('lifeCycleId')\" [routerLink]=\"[{ outlets: {lifeCycleOutlet: ['life-cycle'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Life cycle Demo</a>\r\n\t\t<div id=\"lifeCycleId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='lifeCycleOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('templateContainerId')\"\r\n\t\t\t[routerLink]=\"[{ outlets: {templateContainerOutlet: ['template-container'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Template Container</a>\r\n\t\t<div id=\"templateContainerId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='templateContainerOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('inputOutputId')\" [routerLink]=\"[{ outlets: {inputOutputOutlet: ['input-output'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Pipe Demo</a>\r\n\t\t<div id=\"inputOutputId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='inputOutputOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n</div>"
 
 /***/ }),
 
@@ -678,7 +678,7 @@ module.exports = "<p>\r\n  recaptcha works!\r\n</p>\r\n<form action=\"?\" method
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Sidebar -->\r\n<div class=\"w3-container w3-margin-bottom\">\r\n\r\n\r\n    <div class=\"w3-sidebar w3-bar-block w3-animate-left\" style=\"display:none;z-index:5\" id=\"mySidebar\">\r\n        <button class=\"w3-bar-item w3-button w3-large\" onclick=\"w3_close()\">Close &times;</button>\r\n        <ul class=\"w3-ul w3-card-4\">\r\n            <li *ngFor=\"let link of sideBarLinks\">\r\n                <a class=\"w3-bar-item w3-button w3-hover-blue\" routerLinkActive=\"active\"\r\n                    routerLink='{{link.routeLink}}'>\r\n                    <span data-feather=\"layers\">{{link.name}}</span>\r\n                </a>\r\n            </li>\r\n        </ul>\r\n        <button class=\"w3-bar-item w3-button w3-hover-blue\" onclick=\"myAccFunc()\">\r\n            Accordion <i class=\"fa fa-caret-down\"></i>\r\n        </button>\r\n        <div id=\"demoAcc\" class=\"w3-hide w3-white w3-card\">\r\n            <a href=\"#\" class=\"w3-bar-item w3-button\">Link</a>\r\n            <a href=\"#\" class=\"w3-bar-item w3-button\">Link</a>\r\n        </div>\r\n\r\n        <div class=\"w3-dropdown-click\">\r\n            <button class=\"w3-button\" onclick=\"myDropFunc()\">\r\n                Dropdown <i class=\"fa fa-caret-down\"></i>\r\n            </button>\r\n            <div id=\"demoDrop\" class=\"w3-dropdown-content w3-bar-block w3-white w3-card\">\r\n                <a href=\"#\" class=\"w3-bar-item w3-button\">Link</a>\r\n                <a href=\"#\" class=\"w3-bar-item w3-button\">Link</a>\r\n            </div>\r\n        </div>\r\n        <div class=\"w3-container w3-section\"></div>\r\n\r\n\r\n    </div>\r\n</div>"
+module.exports = "<!-- Sidebar -->\r\n<div class=\"w3-container w3-margin-bottom\">\r\n\r\n\r\n    <div class=\"w3-sidebar w3-bar-block w3-animate-left\" style=\"display:none;z-index:5\" id=\"mySidebar\">\r\n        <button class=\"w3-bar-item w3-button w3-large\" onclick=\"w3_close()\">Close &times;</button>\r\n        <ul class=\"w3-ul w3-card-4\">\r\n            <li *ngFor=\"let link of sideBarLinks\">\r\n                <a class=\"w3-bar-item w3-button w3-hover-blue\" routerLinkActive=\"active\"\r\n                    routerLink='{{link.routeLink}}'>\r\n                    <span data-feather=\"layers\">{{link.name}}</span>\r\n                </a>\r\n            </li>\r\n        </ul>\r\n        \r\n        <div class=\"w3-container w3-section\"></div>\r\n\r\n\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -876,6 +876,7 @@ var routes = [
     { path: 'youtube', loadChildren: function () { return __webpack_require__.e(/*! import() | youtube-youtube-module */ "youtube-youtube-module").then(__webpack_require__.bind(null, /*! ./youtube/youtube.module */ "./src/app/youtube/youtube.module.ts")).then(function (mod) { return mod.YoutubeModule; }); } },
     { path: 'oauth2', redirectTo: '/oauth2', pathMatch: 'full' },
     { path: 'misc', redirectTo: '/misc', pathMatch: 'full' },
+    { path: 'userTemplate', loadChildren: function () { return __webpack_require__.e(/*! import() | user-template-user-template-module */ "user-template-user-template-module").then(__webpack_require__.bind(null, /*! ./user-template/user-template.module */ "./src/app/user-template/user-template.module.ts")).then(function (mod) { return mod.UserTemplateModule; }); } },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -988,12 +989,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _directive_directive_module__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./directive/directive.module */ "./src/app/directive/directive.module.ts");
 /* harmony import */ var _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./page-not-found/page-not-found.component */ "./src/app/page-not-found/page-not-found.component.ts");
 /* harmony import */ var _global_error_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./global-error.component */ "./src/app/global-error.component.ts");
+/* harmony import */ var _core_core_module__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./core/core.module */ "./src/app/core/core.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -1075,7 +1078,8 @@ var AppModule = /** @class */ (function () {
                 _userform_userform_module__WEBPACK_IMPORTED_MODULE_30__["UserformModule"],
                 _oauth2_oauth2_module__WEBPACK_IMPORTED_MODULE_31__["Oauth2Module"],
                 _misc_misc_module__WEBPACK_IMPORTED_MODULE_32__["MiscModule"],
-                _directive_directive_module__WEBPACK_IMPORTED_MODULE_33__["DirectiveModule"]
+                _directive_directive_module__WEBPACK_IMPORTED_MODULE_33__["DirectiveModule"],
+                _core_core_module__WEBPACK_IMPORTED_MODULE_36__["CoreModule"]
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]],
@@ -1624,6 +1628,44 @@ var ContentBodyComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ContentBodyComponent);
     return ContentBodyComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/core/core.module.ts":
+/*!*************************************!*\
+  !*** ./src/app/core/core.module.ts ***!
+  \*************************************/
+/*! exports provided: CoreModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CoreModule", function() { return CoreModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var CoreModule = /** @class */ (function () {
+    function CoreModule() {
+    }
+    CoreModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            declarations: [],
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]
+            ]
+        })
+    ], CoreModule);
+    return CoreModule;
 }());
 
 
@@ -4574,6 +4616,7 @@ module.exports = "a:link {\n  color: black;\n  font-family: \"Roboto\";\n  text-
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MiscComponent", function() { return MiscComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4584,16 +4627,32 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var MiscComponent = /** @class */ (function () {
-    function MiscComponent() {
+    function MiscComponent(router, route) {
+        this.router = router;
+        this.route = route;
+        this.url = '';
     }
     MiscComponent.prototype.myFunction = function (id) {
         console.log('Id :', id);
+    };
+    MiscComponent.prototype.ngOnInit = function () {
+        //	this.location.replaceState('state:any,'','',[]);
     };
     MiscComponent.prototype.ngAfterViewInit = function () {
         console.log(this.demo);
         //	this.demo.nativeElement.focus(); 
     };
+    MiscComponent.prototype.goBack = function () {
+        this.url = this.url.slice(0, this.url.lastIndexOf('/'));
+        console.log('Modified url:', this.url);
+        this.router.navigate([this.url]);
+    };
+    MiscComponent.ctorParameters = function () { return [
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"] }
+    ]; };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('demo', { static: false }),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
@@ -4603,7 +4662,9 @@ var MiscComponent = /** @class */ (function () {
             selector: 'app-misc',
             template: __webpack_require__(/*! raw-loader!./misc.component.html */ "./node_modules/raw-loader/index.js!./src/app/misc/misc.component.html"),
             styles: [__webpack_require__(/*! ./misc.component.scss */ "./src/app/misc/misc.component.scss")]
-        })
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"]])
     ], MiscComponent);
     return MiscComponent;
 }());
@@ -6007,6 +6068,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SidebarLeftComponent", function() { return SidebarLeftComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _sidebar_left_sidebar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sidebar-left/sidebar */ "./src/app/sidebar-left/sidebar.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6018,19 +6080,36 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var SidebarLeftComponent = /** @class */ (function () {
-    function SidebarLeftComponent() {
+    function SidebarLeftComponent(router) {
+        this.router = router;
         this.sideBarLinks = _sidebar_left_sidebar__WEBPACK_IMPORTED_MODULE_1__["SideBarLinks"];
     }
     SidebarLeftComponent.prototype.ngOnInit = function () {
     };
+    SidebarLeftComponent.prototype.gotoProductDetails = function (url) {
+        var myurl = "" + url;
+        console.log("Url:", myurl);
+        this.router.navigate([myurl]).then(function (e) {
+            if (e) {
+                console.log("Navigation is successful!");
+            }
+            else {
+                console.log("Navigation has failed!", e);
+            }
+        });
+    };
+    SidebarLeftComponent.ctorParameters = function () { return [
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+    ]; };
     SidebarLeftComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-sidebar-left',
             template: __webpack_require__(/*! raw-loader!./sidebar-left.component.html */ "./node_modules/raw-loader/index.js!./src/app/sidebar-left/sidebar-left.component.html"),
             styles: [__webpack_require__(/*! ./sidebar-left.component.css */ "./src/app/sidebar-left/sidebar-left.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], SidebarLeftComponent);
     return SidebarLeftComponent;
 }());
@@ -6068,7 +6147,9 @@ var SideBarLinks = [
     { 'name': 'Chart', 'description': 'Contains various charts', 'routeLink': '/chart' },
     { 'name': 'File Upload', 'description': 'File Upload Module ', 'routeLink': '/fileUpload' },
     { 'name': 'Youtube', 'description': 'Youtube Video', 'routeLink': '/youtube' },
-    { 'name': 'Miscellaneous ', 'description': 'Different Miscellaneous examples', 'routeLink': '/misc' }
+    { 'name': 'Miscellaneous', 'description': 'Different Miscellaneous examples', 'routeLink': '/misc' },
+    { 'name': 'User Template', 'description': 'Different User Template', 'routeLink': '/userTemplate' },
+    { 'name': 'About Me', 'description': 'About Me', 'routeLink': '/aboutus' }
     //   {'name':'OAuth2','description':'Different Oauth examples','routeLink':'/oauth2'},
     //{'name':'Recaptcha','description':'ngx captcha ','routeLink':'/recaptcha'},    
     //   {'name':'Login','description':'Contains related stuff','routeLink':'/login'},
