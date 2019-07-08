@@ -31,7 +31,38 @@ body {font-family: "Lato", sans-serif}
     document.getElementById("myOverlay").style.display = "none";
   }
 
+  function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-blue";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-blue", "");
+  }
+}
+
+function myDropFunc() {
+  var x = document.getElementById("demoDrop");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-blue";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-blue", "");
+  }
+}
   
+function myFunction(id) {
+		  var x = document.getElementById(id);
+		  if (x.className.indexOf("w3-show") == -1) {
+			x.className += " w3-show";
+		  } else { 
+			x.className = x.className.replace(" w3-show", "");
+		  }
+		}
 </script>
 
 </html>

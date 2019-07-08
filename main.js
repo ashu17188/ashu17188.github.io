@@ -458,7 +458,7 @@ module.exports = "<div class=\"container\" style=\"width:400px\">\r\n    <div st
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<footer class=\"w3-container w3-padding-16 w3-center w3-large w3-blue\">\r\n    <p>Find me on social media.</p>\r\n    <a  href=\"https://www.facebook.com/ashu17188\" class=\"fa fa-facebook-official w3-hover-opacity\"></a>\r\n    <a class=\"fa fa-linkedin w3-hover-opacity\" href=\"https://www.linkedin.com/in/ashutosh-shukla-42119644/\"></a>\r\n    <i class=\"fa fa-instagram w3-hover-opacity\"></i>\r\n    <i class=\"fa fa-snapchat w3-hover-opacity\"></i>\r\n    <i class=\"fa fa-pinterest-p w3-hover-opacity\"></i>\r\n    <i class=\"fa fa-twitter w3-hover-opacity\"></i>\r\n   \r\n    <p>Copyright 2019-2020</p>\r\n  </footer>"
+module.exports = "<footer class=\"w3-container w3-padding-16 w3-center w3-large w3-blue\">\r\n    <p>Find me on social media.</p>\r\n    <a  href=\"https://www.facebook.com/ashu17188\" target=\"_blank\" class=\"fa fa-facebook-official w3-hover-opacity\"></a>\r\n    <a class=\"fa fa-linkedin w3-hover-opacity\" href=\"https://www.linkedin.com/in/ashutosh-shukla-42119644/\" target=\"_blank\"></a>\r\n    <i class=\"fa fa-instagram w3-hover-opacity\"></i>\r\n    <i class=\"fa fa-snapchat w3-hover-opacity\"></i>\r\n    <i class=\"fa fa-pinterest-p w3-hover-opacity\"></i>\r\n    <i class=\"fa fa-twitter w3-hover-opacity\"></i>\r\n   \r\n    <p>Copyright 2019-2020</p>\r\n  </footer>"
 
 /***/ }),
 
@@ -579,7 +579,7 @@ module.exports = "<h2 class=\"center\">Angular Life Cycle Hooks:</h2>\r\n\r\n<p>
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Welcome to Miscellaneous Examples</h2>\r\n    <nav [ngClass] = \"'child-menu'\">\r\n      <ul>\r\n<!--<li><a [routerLink]=\"['dialog']\" >Dialog Directive</a></li> -->   \t \r\n\t\t<li><a [routerLink]=\"['shadow']\">Shadow Directive</a></li>\r\n\t\t<li><a [routerLink]=\"['highlight']\" >Highlight Directive</a></li>\r\n\t\t<li><a [routerLink]=\"['changeText']\">Change Text Directive</a></li>\r\n\t\t<li><a [routerLink]=\"['drag-drop']\">Angular Drag-Drop feature</a></li>\r\n\t\t<li><a [routerLink]=\"['virtual-scroll']\">Angular Virtual Scroll feature</a></li>\r\n\t\t<li><a [routerLink]=\"['view-content']\">View/Content Child Feature</a></li>\r\n\t\t<li><a [routerLink]=\"['pipe-demo']\">Async Pipe Feature</a></li>\r\n\t\t<li><a [routerLink]=\"['life-cycle']\">Angular Lifecycle hooks </a></li>\r\n\t\t<li><a [routerLink]=\"['template-container']\">ng-Template,ng-Container,ng-TemplateOutlet </a></li>\r\n\t\t<li><a [routerLink]=\"['input-output']\">@Input, @Ouput Example </a></li>\r\n    </ul>  \r\n\t</nav>  \r\n\t<div [ngClass] = \"'child-container'\">\t\r\n\t  <router-outlet></router-outlet>\t\r\n\t</div>\r\n\r\n\t\r\n\r\n\r\n\r\n"
+module.exports = "<div class=\"w3-container\">\r\n\t<h2>Welcome to Miscellaneous Examples</h2>\r\n\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('shadowId')\" [routerLink]=\"[{ outlets: {shadowOutlet: ['shadow'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Shadow Directive</a>\r\n\t\t<div id=\"shadowId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='shadowOutlet'></router-outlet>\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('highlightId')\" [routerLink]=\"[{ outlets: {highlightOutlet: ['highlight'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Highlight Directive</a>\r\n\t\t<div id=\"highlightId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='highlightOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('changeTextId')\" [routerLink]=\"[{ outlets: {changeTextOutlet: ['changeText'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Change Text Directive</a>\r\n\t\t<div id=\"changeTextId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='changeTextOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('dragDropId')\" [routerLink]=\"[{ outlets: {dragDropOutlet: ['drag-drop'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Drag Drop</a>\r\n\t\t<div id=\"dragDropId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='dragDropOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('virtualScrollId')\"\r\n\t\t\t[routerLink]=\"[{ outlets: {virtualScrollOutlet: ['virtual-scroll'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Virtual Scroll</a>\r\n\t\t<div id=\"virtualScrollId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='virtualScrollOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('viewContentId')\" [routerLink]=\"[{ outlets: {viewContentOutlet: ['view-content'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">View Content</a>\r\n\t\t<div id=\"viewContentId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='viewContentOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('pipeDemoId')\" [routerLink]=\"[{ outlets: {pipeDemoOutlet: ['pipe-demo'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Pipe Demo</a>\r\n\t\t<div id=\"pipeDemoId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='pipeDemoOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('lifeCycleId')\" [routerLink]=\"[{ outlets: {lifeCycleOutlet: ['life-cycle'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Life cycle Demo</a>\r\n\t\t<div id=\"lifeCycleId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='lifeCycleOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('templateContainerId')\"\r\n\t\t\t[routerLink]=\"[{ outlets: {templateContainerOutlet: ['template-container'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Template Container</a>\r\n\t\t<div id=\"templateContainerId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='templateContainerOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n\t<div class=\"w3-container\">\r\n\t\t<a onclick=\"myFunction('inputOutputId')\" [routerLink]=\"[{ outlets: {inputOutputOutlet: ['input-output'] } }]\"\r\n\t\t\tclass=\"w3-button w3-block w3-blue w3-left-align w3-margin-bottom\">Pipe Demo</a>\r\n\t\t<div id=\"inputOutputId\" class=\"w3-hide w3-container w3-light-grey w3-margin\">\r\n\t\t\t<router-outlet name='inputOutputOutlet'></router-outlet>\r\n\r\n\t\t</div>\r\n\r\n\t</div>\r\n</div>"
 
 /***/ }),
 
@@ -678,7 +678,7 @@ module.exports = "<p>\r\n  recaptcha works!\r\n</p>\r\n<form action=\"?\" method
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Sidebar -->\r\n<div class=\"w3-container w3-margin-bottom\">\r\n\r\n\r\n    <div class=\"w3-sidebar w3-bar-block w3-animate-left\" style=\"display:none;z-index:5\" id=\"mySidebar\">\r\n        <button class=\"w3-bar-item w3-button w3-large\" onclick=\"w3_close()\">Close &times;</button>\r\n        <ul class=\"w3-ul w3-card-4\">\r\n            <li *ngFor=\"let link of sideBarLinks\">\r\n                <a class=\"w3-bar-item w3-button w3-hover-blue\" routerLinkActive=\"active\"\r\n                    routerLink='{{link.routeLink}}'>\r\n                    <span data-feather=\"layers\">{{link.name}}</span>\r\n                </a>\r\n            </li>\r\n        </ul>\r\n        <div class=\"w3-container w3-section\"></div>\r\n\r\n        \r\n    </div>\r\n</div>"
+module.exports = "<!-- Sidebar -->\r\n<div class=\"w3-container w3-margin-bottom\">\r\n\r\n\r\n    <div class=\"w3-sidebar w3-bar-block w3-animate-left\" style=\"display:none;z-index:5\" id=\"mySidebar\">\r\n        <button class=\"w3-bar-item w3-button w3-large\" onclick=\"w3_close()\">Close &times;</button>\r\n        <ul class=\"w3-ul w3-card-4\">\r\n            <li *ngFor=\"let link of sideBarLinks\">\r\n                <a class=\"w3-bar-item w3-button w3-hover-blue\" routerLinkActive=\"active\"\r\n                    routerLink='{{link.routeLink}}'>\r\n                    <span data-feather=\"layers\">{{link.name}}</span>\r\n                </a>\r\n            </li>\r\n        </ul>\r\n        <button class=\"w3-bar-item w3-button w3-hover-blue\" onclick=\"myAccFunc()\">\r\n            Accordion <i class=\"fa fa-caret-down\"></i>\r\n        </button>\r\n        <div id=\"demoAcc\" class=\"w3-hide w3-white w3-card\">\r\n            <a href=\"#\" class=\"w3-bar-item w3-button\">Link</a>\r\n            <a href=\"#\" class=\"w3-bar-item w3-button\">Link</a>\r\n        </div>\r\n\r\n        <div class=\"w3-dropdown-click\">\r\n            <button class=\"w3-button\" onclick=\"myDropFunc()\">\r\n                Dropdown <i class=\"fa fa-caret-down\"></i>\r\n            </button>\r\n            <div id=\"demoDrop\" class=\"w3-dropdown-content w3-bar-block w3-white w3-card\">\r\n                <a href=\"#\" class=\"w3-bar-item w3-button\">Link</a>\r\n                <a href=\"#\" class=\"w3-bar-item w3-button\">Link</a>\r\n            </div>\r\n        </div>\r\n        <div class=\"w3-container w3-section\"></div>\r\n\r\n\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -4484,43 +4484,53 @@ var routes = [
             },
             {
                 path: 'shadow',
-                component: _folder__WEBPACK_IMPORTED_MODULE_4__["ShadowComponent"]
+                component: _folder__WEBPACK_IMPORTED_MODULE_4__["ShadowComponent"],
+                outlet: 'shadowOutlet'
             },
             {
                 path: 'highlight',
-                component: _folder__WEBPACK_IMPORTED_MODULE_4__["HighlightComponent"]
+                component: _folder__WEBPACK_IMPORTED_MODULE_4__["HighlightComponent"],
+                outlet: 'highlightOutlet'
             },
             {
                 path: 'changeText',
-                component: _folder__WEBPACK_IMPORTED_MODULE_4__["ChangeTextComponent"]
+                component: _folder__WEBPACK_IMPORTED_MODULE_4__["ChangeTextComponent"],
+                outlet: 'changeTextOutlet'
             },
             {
                 path: 'drag-drop',
-                component: _drag_drop_drag_drop_component__WEBPACK_IMPORTED_MODULE_5__["DragDropComponent"]
+                component: _drag_drop_drag_drop_component__WEBPACK_IMPORTED_MODULE_5__["DragDropComponent"],
+                outlet: 'dragDropOutlet'
             },
             {
                 path: 'virtual-scroll',
-                component: _virtual_scroll_virtual_scroll_component__WEBPACK_IMPORTED_MODULE_6__["VirtualScrollComponent"]
+                component: _virtual_scroll_virtual_scroll_component__WEBPACK_IMPORTED_MODULE_6__["VirtualScrollComponent"],
+                outlet: 'virtualScrollOutlet'
             },
             {
                 path: 'view-content',
-                component: _view_content_view_content_component__WEBPACK_IMPORTED_MODULE_7__["ViewContentComponent"]
+                component: _view_content_view_content_component__WEBPACK_IMPORTED_MODULE_7__["ViewContentComponent"],
+                outlet: 'viewContentOutlet'
             },
             {
                 path: 'pipe-demo',
-                component: _async_pipe_async_pipe_component__WEBPACK_IMPORTED_MODULE_8__["AsyncPipeComponent"]
+                component: _async_pipe_async_pipe_component__WEBPACK_IMPORTED_MODULE_8__["AsyncPipeComponent"],
+                outlet: 'pipeDemoOutlet'
             },
             {
                 path: 'life-cycle',
-                component: _lifecycle_hooks_lifecycle_hooks_component__WEBPACK_IMPORTED_MODULE_9__["LifecycleHooksComponent"]
+                component: _lifecycle_hooks_lifecycle_hooks_component__WEBPACK_IMPORTED_MODULE_9__["LifecycleHooksComponent"],
+                outlet: 'lifeCycleOutlet'
             },
             {
                 path: 'template-container',
-                component: _ng_temp_comp_ng_temp_comp_component__WEBPACK_IMPORTED_MODULE_10__["NgTempCompComponent"]
+                component: _ng_temp_comp_ng_temp_comp_component__WEBPACK_IMPORTED_MODULE_10__["NgTempCompComponent"],
+                outlet: 'templateContainerOutlet'
             },
             {
                 path: 'input-output',
-                component: _input_output_input_output_component__WEBPACK_IMPORTED_MODULE_11__["InputOutputComponent"]
+                component: _input_output_input_output_component__WEBPACK_IMPORTED_MODULE_11__["InputOutputComponent"],
+                outlet: 'inputOutputOutlet'
             },
             { path: '**', component: _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_12__["PageNotFoundComponent"] }
         ]
@@ -4570,10 +4580,24 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
 var MiscComponent = /** @class */ (function () {
     function MiscComponent() {
     }
+    MiscComponent.prototype.myFunction = function (id) {
+        console.log('Id :', id);
+    };
+    MiscComponent.prototype.ngAfterViewInit = function () {
+        console.log(this.demo);
+        //	this.demo.nativeElement.focus(); 
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('demo', { static: false }),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], MiscComponent.prototype, "demo", void 0);
     MiscComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-misc',
@@ -5498,7 +5522,7 @@ var PageNotFoundComponent = /** @class */ (function () {
     PageNotFoundComponent.prototype.ngOnInit = function () {
         this.url = this.router.url;
         console.log('url:', this.url);
-        this.printpath('', this.router.config);
+        // this.printpath('', this.router.config);
     };
     PageNotFoundComponent.prototype.printpath = function (parent, config) {
         for (var i = 0; i < config.length; i++) {
