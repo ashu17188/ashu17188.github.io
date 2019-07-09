@@ -667,7 +667,7 @@ module.exports = "<p>\r\n  recaptcha works!\r\n</p>\r\n<form action=\"?\" method
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Sidebar -->\r\n<div class=\"w3-sidebar w3-bar-block w3-animate-left\" style=\"display:none;z-index:5\" id=\"mySidebar\">\r\n    <button class=\"w3-bar-item w3-button w3-large\" onclick=\"w3_close()\">Close &times;</button>\r\n    <ul class=\"w3-ul w3-card-4\">\r\n        <li *ngFor=\"let link of sideBarLinks\">\r\n            <a class=\"w3-bar-item w3-button w3-hover-blue\" routerLinkActive=\"active\"\r\n                routerLink='{{link.routeLink}}'>\r\n                <span data-feather=\"layers\">{{link.name}}</span>\r\n            </a>\r\n        </li>\r\n    </ul>\r\n    \r\n    <div class=\"w3-container w3-section\"></div>\r\n\r\n\r\n</div>"
+module.exports = "<!-- Sidebar -->\r\n<div class=\"w3-sidebar w3-bar-block w3-animate-left\" style=\"display:none;z-index:5\" id=\"mySidebar\">\r\n    \r\n    <ul class=\"w3-ul w3-card-4\">\r\n        <li><button class=\"w3-bar-item w3-button w3-large\" onclick=\"w3_close()\"><b>Close &times;</b> </button></li>\r\n        <li *ngFor=\"let link of sideBarLinks\">\r\n            <a class=\"w3-bar-item w3-button w3-hover-blue\" routerLinkActive=\"active\"\r\n                routerLink='{{link.routeLink}}'>\r\n                <span data-feather=\"layers\">{{link.name}}</span>\r\n            </a>\r\n        </li>\r\n    </ul>\r\n    \r\n    <div class=\"w3-container w3-section\"></div>\r\n</div>"
 
 /***/ }),
 
@@ -865,6 +865,14 @@ var routes = [
     { path: 'oauth2', redirectTo: '/oauth2', pathMatch: 'full' },
     { path: 'misc', redirectTo: '/misc', pathMatch: 'full' },
     { path: 'userTemplate', loadChildren: function () { return __webpack_require__.e(/*! import() | user-template-user-template-module */ "user-template-user-template-module").then(__webpack_require__.bind(null, /*! ./user-template/user-template.module */ "./src/app/user-template/user-template.module.ts")).then(function (mod) { return mod.UserTemplateModule; }); } },
+    { path: 'login1', loadChildren: function () { return Promise.all(/*! import() | login1-login1-module */[__webpack_require__.e("common"), __webpack_require__.e("login1-login1-module")]).then(__webpack_require__.bind(null, /*! ./login1/login1.module */ "./src/app/login1/login1.module.ts")).then(function (mod) { return mod.Login1Module; }); } },
+    {
+        path: 'login-basic',
+        loadChildren: function () { return Promise.all(/*! import() | authentication-authentication-module */[__webpack_require__.e("common"), __webpack_require__.e("authentication-authentication-module")]).then(__webpack_require__.bind(null, /*! ./authentication/authentication.module */ "./src/app/authentication/authentication.module.ts")).then(function (mod) { return mod.AuthenticationModule; }); }
+        //      loadChildren: './authentication/auth.module#AuthModule'
+    }
+    // {path: 'error',component: GlobalErrorComponent},
+    //  {path: '**',component: PageNotFoundComponent }	
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -5988,6 +5996,7 @@ var SideBarLinks = [
     { 'name': 'Youtube', 'description': 'Youtube Video', 'routeLink': '/youtube' },
     { 'name': 'Miscellaneous', 'description': 'Different Miscellaneous examples', 'routeLink': '/misc' },
     { 'name': 'User Template', 'description': 'Different User Template', 'routeLink': '/userTemplate' },
+    { 'name': 'Login1', 'description': 'Login1 module', 'routeLink': '/login1' },
     { 'name': 'About Me', 'description': 'About Me', 'routeLink': '/aboutus' }
     //   {'name':'OAuth2','description':'Different Oauth examples','routeLink':'/oauth2'},
     //{'name':'Recaptcha','description':'ngx captcha ','routeLink':'/recaptcha'},    
