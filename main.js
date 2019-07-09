@@ -293,7 +293,7 @@ webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\r\n<html>\r\n<title>W3.CSS Template</title>\r\n<meta charset=\"UTF-8\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n<style>\r\n  html,\r\n  body,\r\n  h1,\r\n  h2,\r\n  h3,\r\n  h4,\r\n  h5,\r\n  h6 {\r\n    font-family: \"Roboto\", sans-serif\r\n  }\r\n</style>\r\n\r\n<body class=\"w3-light-grey\">\r\n\r\n  <!-- Page Container -->\r\n  <div class=\"w3-content w3-margin-top\" style=\"max-width:1400px;\">\r\n\r\n    <!-- The Grid -->\r\n    <div class=\"w3-row-padding\">\r\n\r\n      <!-- Left Column -->\r\n      <div class=\"w3-third\">\r\n\r\n        <div class=\"w3-white w3-text-grey w3-card-4\">\r\n          <div class=\"w3-display-container\">\r\n            <img src=\"assets/images/avator.jpg\" style=\"width:100%\" alt=\"Avatar\">\r\n            <div class=\"w3-display-bottomleft w3-container w3-text-black w3-padding-small w3-hide-small\">\r\n              <h4><b>Ashutosh Shukla</b></h4>\r\n            </div>\r\n          </div>\r\n          <div class=\"w3-container\">\r\n            <p><i class=\"fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue\"></i>Full Stack Developer</p>\r\n            <p><i class=\"fa fa-home fa-fw w3-margin-right w3-large w3-text-blue\"></i>Pune, INDIA</p>\r\n            <p><i class=\"fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue\"></i>ashu17188@mail.com</p>\r\n            <p><i class=\"fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue\"></i>+91-8989161017, +91-9131584689</p>\r\n            <hr>\r\n\r\n            <p class=\"w3-large\"><b><i class=\"fa fa-asterisk fa-fw w3-margin-right w3-text-blue\"></i>Skills</b></p>\r\n            <p>Java Development</p>\r\n            <div class=\"w3-light-grey w3-round-xlarge w3-small\">\r\n              <div class=\"w3-container w3-center w3-round-xlarge w3-blue\" style=\"width:90%\">90%</div>\r\n            </div>\r\n            <p>Angular Development</p>\r\n            <div class=\"w3-light-grey w3-round-xlarge w3-small\">\r\n              <div class=\"w3-container w3-center w3-round-xlarge w3-blue\" style=\"width:80%\">\r\n                <div class=\"w3-center w3-text-white\">80%</div>\r\n              </div>\r\n            </div>\r\n            <p>Python</p>\r\n            <div class=\"w3-light-grey w3-round-xlarge w3-small\">\r\n              <div class=\"w3-container w3-center w3-round-xlarge w3-blue\" style=\"width:75%\">75%</div>\r\n            </div>\r\n            <p>Machine Learning</p>\r\n            <div class=\"w3-light-grey w3-round-xlarge w3-small\">\r\n              <div class=\"w3-container w3-center w3-round-xlarge w3-blue\" style=\"width:50%\">50%</div>\r\n            </div>\r\n            <br>\r\n\r\n            <p class=\"w3-large w3-text-theme\"><b><i class=\"fa fa-globe fa-fw w3-margin-right w3-text-blue\"></i>Languages</b></p>\r\n            <p>Hindi</p>\r\n            <div class=\"w3-light-grey w3-round-xlarge\">\r\n              <div class=\"w3-round-xlarge w3-blue\" style=\"height:24px;width:100%\"></div>\r\n            </div>\r\n            <p>English</p>\r\n            <div class=\"w3-light-grey w3-round-xlarge\">\r\n              <div class=\"w3-round-xlarge w3-blue\" style=\"height:24px;width:80%\"></div>\r\n            </div>\r\n\r\n\r\n            <br>\r\n          </div>\r\n        </div><br>\r\n\r\n        <!-- End Left Column -->\r\n      </div>\r\n\r\n      <!-- Right Column -->\r\n      <div class=\"w3-twothird\">\r\n\r\n        <div class=\"w3-container w3-card w3-white w3-margin-bottom\">\r\n          <h2 class=\"w3-text-grey w3-padding-16\"><i class=\"fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue\"></i>Work\r\n            Experience</h2>\r\n          <div class=\"w3-container\">\r\n            <h5 class=\"w3-opacity\"><b>Java, Angular Development @ Automatic Data Processing </b></h5>\r\n            <h6 class=\"w3-text-blue\"><i class=\"fa fa-calendar fa-fw w3-margin-right\"></i>June 2017 - <span class=\"w3-tag w3-blue w3-round\">Current</span></h6>\r\n            <p>Language: Java, Angular, Python</p>\r\n            <p>Framework: Spring, Spring Boot, Spring Batch, Spring Security ,Angular4\r\n              Python3.x </p>\r\n            \r\n            <hr>\r\n          </div>\r\n          <div class=\"w3-container\">\r\n            <h5 class=\"w3-opacity\"><b>Java ,AngularJs Development @ BNY Technologies</b></h5>\r\n            <h6 class=\"w3-text-blue\"><i class=\"fa fa-calendar fa-fw w3-margin-right\"></i>May 2016 - June 2017</h6>\r\n            <p>Language: Java, AngularJs</p>\r\n            <p>Framework: Spring, Spring Boot, Spring Batch, Spring Security ,AngularJs\r\n                </p>\r\n            <hr>\r\n          </div>\r\n          <div class=\"w3-container\">\r\n            <h5 class=\"w3-opacity\"><b>Java,AngularJs Development @ Capgemini</b></h5>\r\n            <h6 class=\"w3-text-blue\"><i class=\"fa fa-calendar fa-fw w3-margin-right\"></i>April 2013 - Mar 2016</h6>\r\n            <p>Language: Java</p>\r\n            <p>Framework: Spring,  Spring Security </p>\r\n                <br>\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"w3-container w3-card w3-white\">\r\n          <h2 class=\"w3-text-grey w3-padding-16\"><i class=\"fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue\"></i>Education</h2>\r\n          <div class=\"w3-container\">\r\n            <h5 class=\"w3-opacity\"><b>Lakshmi Narain College of technology , Bhopal (M.P)</b></h5>\r\n            <h6 class=\"w3-text-blue\"><i class=\"fa fa-calendar fa-fw w3-margin-right\"></i>Jun 2008 - Mar 2012</h6>\r\n            <p>Bachelor Degree in Computer Science</p>\r\n            <hr>\r\n          </div>\r\n        </div>\r\n\r\n\r\n        <!-- End Right Column -->\r\n      </div>\r\n\r\n      <!-- End Grid -->\r\n    </div>\r\n    <div class=\"w3-container w3-card-4 w3-white\">\r\n      <table>\r\n        <tr>\r\n          <td><canvas id=\"lineChart\"></canvas></td>\r\n        </tr>\r\n      </table>\r\n    </div>\r\n\r\n    <!-- End Page Container -->\r\n  </div>\r\n\r\n\r\n\r\n</body>\r\n\r\n</html>"
+module.exports = "  <!-- Page Container -->\r\n  <div class=\"w3-content w3-margin-top\">\r\n\r\n    <!-- The Grid -->\r\n    <div class=\"w3-row-padding\">\r\n\r\n      <!-- Left Column -->\r\n      <div class=\"w3-third\">\r\n\r\n        <div class=\"w3-white w3-text-grey w3-card-4\">\r\n          <div class=\"w3-display-container\">\r\n            <img src=\"assets/images/avator.jpg\" style=\"width:100%\" alt=\"Avatar\">\r\n            <div class=\"w3-display-bottomleft w3-container w3-text-black w3-padding-small w3-hide-small\">\r\n              <h4><b>Ashutosh Shukla</b></h4>\r\n            </div>\r\n          </div>\r\n          <div class=\"w3-container\">\r\n            <p><i class=\"fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue\"></i>Full Stack Developer</p>\r\n            <p><i class=\"fa fa-home fa-fw w3-margin-right w3-large w3-text-blue\"></i>Pune, INDIA</p>\r\n            <p><i class=\"fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue\"></i>ashu17188@mail.com</p>\r\n            <p><i class=\"fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue\"></i>+91-8989161017, +91-9131584689</p>\r\n            <hr>\r\n\r\n            <p class=\"w3-large\"><b><i class=\"fa fa-asterisk fa-fw w3-margin-right w3-text-blue\"></i>Skills</b></p>\r\n            <p>Java Development</p>\r\n            <div class=\"w3-light-grey w3-round-xlarge w3-small\">\r\n              <div class=\"w3-container w3-center w3-round-xlarge w3-blue\" style=\"width:90%\">90%</div>\r\n            </div>\r\n            <p>Angular Development</p>\r\n            <div class=\"w3-light-grey w3-round-xlarge w3-small\">\r\n              <div class=\"w3-container w3-center w3-round-xlarge w3-blue\" style=\"width:80%\">\r\n                <div class=\"w3-center w3-text-white\">80%</div>\r\n              </div>\r\n            </div>\r\n            <p>Python</p>\r\n            <div class=\"w3-light-grey w3-round-xlarge w3-small\">\r\n              <div class=\"w3-container w3-center w3-round-xlarge w3-blue\" style=\"width:75%\">75%</div>\r\n            </div>\r\n            <p>Machine Learning</p>\r\n            <div class=\"w3-light-grey w3-round-xlarge w3-small\">\r\n              <div class=\"w3-container w3-center w3-round-xlarge w3-blue\" style=\"width:50%\">50%</div>\r\n            </div>\r\n            <br>\r\n\r\n            <p class=\"w3-large w3-text-theme\"><b><i class=\"fa fa-globe fa-fw w3-margin-right w3-text-blue\"></i>Languages</b></p>\r\n            <p>Hindi</p>\r\n            <div class=\"w3-light-grey w3-round-xlarge\">\r\n              <div class=\"w3-round-xlarge w3-blue\" style=\"height:24px;width:100%\"></div>\r\n            </div>\r\n            <p>English</p>\r\n            <div class=\"w3-light-grey w3-round-xlarge\">\r\n              <div class=\"w3-round-xlarge w3-blue\" style=\"height:24px;width:80%\"></div>\r\n            </div>\r\n\r\n\r\n            <br>\r\n          </div>\r\n        </div><br>\r\n\r\n        <!-- End Left Column -->\r\n      </div>\r\n\r\n      <!-- Right Column -->\r\n      <div class=\"w3-twothird\">\r\n\r\n        <div class=\"w3-container w3-card w3-white w3-margin-bottom\">\r\n          <h2 class=\"w3-text-grey w3-padding-16\"><i class=\"fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue\"></i>Work\r\n            Experience</h2>\r\n          <div class=\"w3-container\">\r\n            <h5 class=\"w3-opacity\"><b>Java, Angular Development @ Automatic Data Processing </b></h5>\r\n            <h6 class=\"w3-text-blue\"><i class=\"fa fa-calendar fa-fw w3-margin-right\"></i>June 2017 - <span class=\"w3-tag w3-blue w3-round\">Current</span></h6>\r\n            <p>Language: Java, Angular, Python</p>\r\n            <p>Framework: Spring, Spring Boot, Spring Batch, Spring Security ,Angular4\r\n              Python3.x </p>\r\n            \r\n            <hr>\r\n          </div>\r\n          <div class=\"w3-container\">\r\n            <h5 class=\"w3-opacity\"><b>Java ,AngularJs Development @ BNY Technologies</b></h5>\r\n            <h6 class=\"w3-text-blue\"><i class=\"fa fa-calendar fa-fw w3-margin-right\"></i>May 2016 - June 2017</h6>\r\n            <p>Language: Java, AngularJs</p>\r\n            <p>Framework: Spring, Spring Boot, Spring Batch, Spring Security ,AngularJs\r\n                </p>\r\n            <hr>\r\n          </div>\r\n          <div class=\"w3-container\">\r\n            <h5 class=\"w3-opacity\"><b>Java,AngularJs Development @ Capgemini</b></h5>\r\n            <h6 class=\"w3-text-blue\"><i class=\"fa fa-calendar fa-fw w3-margin-right\"></i>April 2013 - Mar 2016</h6>\r\n            <p>Language: Java</p>\r\n            <p>Framework: Spring,  Spring Security </p>\r\n                <br>\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"w3-container w3-card w3-white\">\r\n          <h2 class=\"w3-text-grey w3-padding-16\"><i class=\"fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue\"></i>Education</h2>\r\n          <div class=\"w3-container\">\r\n            <h5 class=\"w3-opacity\"><b>Lakshmi Narain College of technology , Bhopal (M.P)</b></h5>\r\n            <h6 class=\"w3-text-blue\"><i class=\"fa fa-calendar fa-fw w3-margin-right\"></i>Jun 2008 - Mar 2012</h6>\r\n            <p>Bachelor Degree in Computer Science</p>\r\n            <hr>\r\n          </div>\r\n        </div>\r\n\r\n\r\n        <!-- End Right Column -->\r\n      </div>\r\n\r\n      <!-- End Grid -->\r\n    </div>\r\n    \r\n\r\n    <!-- End Page Container -->\r\n  </div>\r\n\r\n  <div class=\"w3-content w3-margin-top w3-row\">\r\n    <table>\r\n      <tr>\r\n        <td><canvas id=\"lineChart\"></canvas></td>\r\n      </tr>\r\n    </table>\r\n  </div>\r\n\r\n"
 
 /***/ }),
 
@@ -305,17 +305,6 @@ module.exports = "<!DOCTYPE html>\r\n<html>\r\n<title>W3.CSS Template</title>\r\
 /***/ (function(module, exports) {
 
 module.exports = "<app-header></app-header>\r\n<app-sidebar-left></app-sidebar-left>\r\n\r\n<!-- Page Content -->\r\n<div class=\"w3-overlay w3-animate-opacity\" onclick=\"w3_close()\" style=\"cursor:pointer\" id=\"myOverlay\"></div>\r\n\r\n<div>\r\n  <button class=\"w3-button w3-white w3-xxlarge\" onclick=\"w3_open()\">&#9776;</button>\r\n  <div class=\"w3-container\">\r\n    <h1 class=\"h2\">Dashboard</h1>\r\n    <hr>\r\n    <router-outlet></router-outlet>\r\n  </div>\r\n</div>\r\n\r\n<app-footer></app-footer>"
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/app/blog-website1/body/body.component.html":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/blog-website1/body/body.component.html ***!
-  \**********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\r\n  <body>\r\n\r\n    <!-- Navigation -->\r\n<!--\r\n    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\r\n      <div class=\"container\">\r\n        <a class=\"navbar-brand\" href=\"#\">Start Bootstrap</a>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n          <ul class=\"navbar-nav ml-auto\">\r\n            <li class=\"nav-item active\">\r\n              <a class=\"nav-link\" href=\"#\">Home\r\n                <span class=\"sr-only\">(current)</span>\r\n              </a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link\" href=\"#\">About</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link\" href=\"#\">Services</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link\" href=\"#\">Contact</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </nav>\r\n  -->\r\n    <!-- Page Content -->\r\n    <div class=\"container\">\r\n\r\n      <div class=\"row\">\r\n\r\n        <!-- Post Content Column -->\r\n        <div class=\"col-lg-8\">\r\n\r\n          <!-- Title -->\r\n          <h1 class=\"mt-4\">Post Title</h1>\r\n\r\n          <!-- Author -->\r\n          <p class=\"lead\">\r\n            by\r\n            <a href=\"#\">Start Bootstrap</a>\r\n          </p>\r\n\r\n          <hr>\r\n\r\n          <!-- Date/Time -->\r\n          <p>Posted on January 1, 2018 at 12:00 PM</p>\r\n\r\n          <hr>\r\n\r\n          <!-- Preview Image -->\r\n          <img class=\"img-fluid rounded\" src=\"http://placehold.it/900x300\" alt=\"\">\r\n\r\n          <hr>\r\n\r\n          <!-- Post Content -->\r\n          <p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>\r\n\r\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>\r\n\r\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>\r\n\r\n          <blockquote class=\"blockquote\">\r\n            <p class=\"mb-0\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>\r\n            <footer class=\"blockquote-footer\">Someone famous in\r\n              <cite title=\"Source Title\">Source Title</cite>\r\n            </footer>\r\n          </blockquote>\r\n\r\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>\r\n\r\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>\r\n\r\n          <hr>\r\n\r\n          <!-- Comments Form -->\r\n          <div class=\"card my-4\">\r\n            <h5 class=\"card-header\">Leave a Comment:</h5>\r\n            <div class=\"card-body\">\r\n              <form>\r\n                <div class=\"form-group\">\r\n                  <textarea class=\"form-control\" rows=\"3\"></textarea>\r\n                </div>\r\n                <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n              </form>\r\n            </div>\r\n          </div>\r\n\r\n          <!-- Single Comment -->\r\n          <div class=\"media mb-4\">\r\n            <img class=\"d-flex mr-3 rounded-circle\" src=\"http://placehold.it/50x50\" alt=\"\">\r\n            <div class=\"media-body\">\r\n              <h5 class=\"mt-0\">Commenter Name</h5>\r\n              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\r\n            </div>\r\n          </div>\r\n\r\n          <!-- Comment with nested comments -->\r\n          <div class=\"media mb-4\">\r\n            <img class=\"d-flex mr-3 rounded-circle\" src=\"http://placehold.it/50x50\" alt=\"\">\r\n            <div class=\"media-body\">\r\n              <h5 class=\"mt-0\">Commenter Name</h5>\r\n              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\r\n\r\n              <div class=\"media mt-4\">\r\n                <img class=\"d-flex mr-3 rounded-circle\" src=\"http://placehold.it/50x50\" alt=\"\">\r\n                <div class=\"media-body\">\r\n                  <h5 class=\"mt-0\">Commenter Name</h5>\r\n                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\r\n                </div>\r\n              </div>\r\n\r\n              <div class=\"media mt-4\">\r\n                <img class=\"d-flex mr-3 rounded-circle\" src=\"http://placehold.it/50x50\" alt=\"\">\r\n                <div class=\"media-body\">\r\n                  <h5 class=\"mt-0\">Commenter Name</h5>\r\n                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\r\n                </div>\r\n              </div>\r\n\r\n            </div>\r\n          </div>\r\n\r\n        </div>\r\n\r\n        <!-- Sidebar Widgets Column -->\r\n        <div class=\"col-md-4\">\r\n\r\n          <!-- Search Widget -->\r\n          <div class=\"card my-4\">\r\n            <h5 class=\"card-header\">Search</h5>\r\n            <div class=\"card-body\">\r\n              <div class=\"input-group\">\r\n                <input type=\"text\" class=\"form-control\" placeholder=\"Search for...\">\r\n                <span class=\"input-group-btn\">\r\n                  <button class=\"btn btn-secondary\" type=\"button\">Go!</button>\r\n                </span>\r\n              </div>\r\n            </div>\r\n          </div>\r\n\r\n          <!-- Categories Widget -->\r\n          <div class=\"card my-4\">\r\n            <h5 class=\"card-header\">Categories</h5>\r\n            <div class=\"card-body\">\r\n              <div class=\"row\">\r\n                <div class=\"col-lg-6\">\r\n                  <ul class=\"list-unstyled mb-0\">\r\n                    <li>\r\n                      <a href=\"#\">Web Design</a>\r\n                    </li>\r\n                    <li>\r\n                      <a href=\"#\">HTML</a>\r\n                    </li>\r\n                    <li>\r\n                      <a href=\"#\">Freebies</a>\r\n                    </li>\r\n                  </ul>\r\n                </div>\r\n                <div class=\"col-lg-6\">\r\n                  <ul class=\"list-unstyled mb-0\">\r\n                    <li>\r\n                      <a href=\"#\">JavaScript</a>\r\n                    </li>\r\n                    <li>\r\n                      <a href=\"#\">CSS</a>\r\n                    </li>\r\n                    <li>\r\n                      <a href=\"#\">Tutorials</a>\r\n                    </li>\r\n                  </ul>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n\r\n          <!-- Side Widget -->\r\n          <div class=\"card my-4\">\r\n            <h5 class=\"card-header\">Side Widget</h5>\r\n            <div class=\"card-body\">\r\n              You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!\r\n            </div>\r\n          </div>\r\n\r\n        </div>\r\n\r\n      </div>\r\n      <!-- /.row -->\r\n\r\n    </div>\r\n"
 
 /***/ }),
 
@@ -480,7 +469,7 @@ module.exports = "<header class=\"w3-bar w3-blue\">\r\n    <a class=\"w3-bar-ite
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"hero\">\r\n    \r\n     <h2>{{ hero.name | uppercase }} Details</h2>\r\n     <div><span>id: </span>{{hero.id}}</div>\r\n     <div>\r\n       <label>name:\r\n         <input [(ngModel)]=\"hero.name\" placeholder=\"name\">\r\n       </label>\r\n     </div>\r\n    \r\n     \r\n   </div>\r\n\r\n"
+module.exports = "<div *ngIf=\"hero\" class=\"w3-row\">\r\n\r\n  <div class=\"w3-col s6 w3-green w3-center w3-margin\"><span>id: </span>{{hero.id}}</div>\r\n\r\n  <div class=\"w3-row w3-margin\">\r\n    <label>Name</label>\r\n    <input class=\"w3-input\" type=\"text\" [(ngModel)]=\"hero.name\" placeholder=\"name\">\r\n  </div>\r\n</div>\r\n<div class=\"w3-margin\"></div>"
 
 /***/ }),
 
@@ -491,7 +480,7 @@ module.exports = "<div *ngIf=\"hero\">\r\n    \r\n     <h2>{{ hero.name | upperc
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<p>The  interpolation displays the component's hero.name property value within the <code>&lt;li&gt;&lt;/li&gt;</code> element.\r\n  The [hero] property binding passes the value of selectedHero from the parent HeroListComponent to the hero property of the child HeroDetailComponent.\r\n  The (click) event binding calls the component's selectHero method when the user clicks a hero's name.</p>\r\n<ul>\r\n  <li>The <code>{{</code><code>hero.name}}</code> interpolation displays the component's hero.name property value within the &lt;li&gt; element. &lt;/li&gt;\r\n  <li>The [hero] property binding passes the value of selectedHero from the parent HeroListComponent to the hero property of the child HeroDetailComponent.</li>\r\n  <li>The (click) event binding calls the component's selectHero method when the user clicks a hero's name.</li>\r\n  <li>\r\n      \r\n   \r\n  \r\n  </li>\r\n</ul>\r\n\r\n  <h2>My Heroes</h2>\r\n<ul class=\"heroes\">\r\n  <li *ngFor=\"let hero of heroes\"\r\n    [class.selected]=\"hero === selectedHero\"\r\n    (click)=\"onSelect(hero)\">\r\n    <span class=\"badge\">{{hero.id}}</span> {{hero.name}}\r\n  </li>\r\n</ul>\r\n\r\n\r\n<app-hero-detail [hero]=\"selectedHero\"></app-hero-detail>\r\n\r\n"
+module.exports = "<div>\r\n<p>The  interpolation displays the component's hero.name property value within the <code>&lt;li&gt;&lt;/li&gt;</code> element.\r\n  The [hero] property binding passes the value of selectedHero from the parent HeroListComponent to the hero property of the child HeroDetailComponent.\r\n  The (click) event binding calls the component's selectHero method when the user clicks a hero's name.</p>\r\n<ul>\r\n  <li>The <code>{{</code><code>hero.name}}</code> interpolation displays the component's hero.name property value within the &lt;li&gt; element. &lt;/li&gt;\r\n  <li>The [hero] property binding passes the value of selectedHero from the parent HeroListComponent to the hero property of the child HeroDetailComponent.</li>\r\n  <li>The (click) event binding calls the component's selectHero method when the user clicks a hero's name.</li>\r\n  <li>\r\n  </li>\r\n</ul>\r\n\r\n  <h2>My Heroes</h2>\r\n<ul class=\"w3-ul w3-card-4\">\r\n  <li *ngFor=\"let hero of heroes\"\r\n    [class.selected]=\"hero === selectedHero\"\r\n    (click)=\"onSelect(hero)\">\r\n    <div class=\"w3-row\">\r\n        <div class=\"w3-col s6 w3-pale-red w3-center\"><p>{{hero.id}}</p></div>\r\n        <div class=\"w3-col s6 w3-pale-blue w3-center\"><p> {{hero.name}}</p></div>\r\n      </div>\r\n  </li>\r\n</ul>\r\n\r\n\r\n<app-hero-detail [hero]=\"selectedHero\"></app-hero-detail>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -678,7 +667,7 @@ module.exports = "<p>\r\n  recaptcha works!\r\n</p>\r\n<form action=\"?\" method
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Sidebar -->\r\n<div class=\"w3-container w3-margin-bottom\">\r\n\r\n\r\n    <div class=\"w3-sidebar w3-bar-block w3-animate-left\" style=\"display:none;z-index:5\" id=\"mySidebar\">\r\n        <button class=\"w3-bar-item w3-button w3-large\" onclick=\"w3_close()\">Close &times;</button>\r\n        <ul class=\"w3-ul w3-card-4\">\r\n            <li *ngFor=\"let link of sideBarLinks\">\r\n                <a class=\"w3-bar-item w3-button w3-hover-blue\" routerLinkActive=\"active\"\r\n                    routerLink='{{link.routeLink}}'>\r\n                    <span data-feather=\"layers\">{{link.name}}</span>\r\n                </a>\r\n            </li>\r\n        </ul>\r\n        \r\n        <div class=\"w3-container w3-section\"></div>\r\n\r\n\r\n    </div>\r\n</div>"
+module.exports = "<!-- Sidebar -->\r\n<div class=\"w3-sidebar w3-bar-block w3-animate-left\" style=\"display:none;z-index:5\" id=\"mySidebar\">\r\n    <button class=\"w3-bar-item w3-button w3-large\" onclick=\"w3_close()\">Close &times;</button>\r\n    <ul class=\"w3-ul w3-card-4\">\r\n        <li *ngFor=\"let link of sideBarLinks\">\r\n            <a class=\"w3-bar-item w3-button w3-hover-blue\" routerLinkActive=\"active\"\r\n                routerLink='{{link.routeLink}}'>\r\n                <span data-feather=\"layers\">{{link.name}}</span>\r\n            </a>\r\n        </li>\r\n    </ul>\r\n    \r\n    <div class=\"w3-container w3-section\"></div>\r\n\r\n\r\n</div>"
 
 /***/ }),
 
@@ -784,7 +773,7 @@ var AboutusComponent = /** @class */ (function () {
         var chartTemp = {
             type: type,
             data: {
-                labels: ["Capgemini Technology", "BNY Technologies", "ADP Pvt Ltd"],
+                labels: ["Capgemini", "BNY", "ADP"],
                 datasets: [{
                         label: 'Years Of Experience',
                         data: [3, 4, 6, 8],
@@ -868,7 +857,6 @@ var routes = [
     { path: 'country', redirectTo: '/country', pathMatch: 'full' },
     { path: 'person', redirectTo: '/person', pathMatch: 'full' },
     //{path:'login',redirectTo:'/login',pathMatch:'full'},
-    { path: 'blogWebsite1', redirectTo: '/blogWebsite1', pathMatch: 'full' },
     { path: 'table', component: _table_table_component__WEBPACK_IMPORTED_MODULE_6__["TableComponent"] },
     { path: 'chart', component: _charts_charts_component__WEBPACK_IMPORTED_MODULE_7__["ChartsComponent"] },
     { path: 'recaptcha', component: _recaptcha_recaptcha_component__WEBPACK_IMPORTED_MODULE_8__["RecaptchaComponent"] },
@@ -969,34 +957,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _aboutus_aboutus_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./aboutus/aboutus.component */ "./src/app/aboutus/aboutus.component.ts");
 /* harmony import */ var _util_emailValidator__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./util/emailValidator */ "./src/app/util/emailValidator.ts");
 /* harmony import */ var _util_ageValidator__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./util/ageValidator */ "./src/app/util/ageValidator.ts");
-/* harmony import */ var _blog_website1_blog_website1_module__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./blog-website1/blog-website1.module */ "./src/app/blog-website1/blog-website1.module.ts");
-/* harmony import */ var _country_country_module__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./country/country.module */ "./src/app/country/country.module.ts");
-/* harmony import */ var _person_person_module__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./person/person.module */ "./src/app/person/person.module.ts");
-/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ag-grid-angular */ "./node_modules/ag-grid-angular/main.js");
-/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(ag_grid_angular__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var _table_table_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./table/table.component */ "./src/app/table/table.component.ts");
-/* harmony import */ var _charts_charts_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./charts/charts.component */ "./src/app/charts/charts.component.ts");
-/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/cdk/drag-drop */ "./node_modules/@angular/cdk/esm5/drag-drop.es5.js");
-/* harmony import */ var angular_webstorage_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! angular-webstorage-service */ "./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
-/* harmony import */ var _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/cdk/scrolling */ "./node_modules/@angular/cdk/esm5/scrolling.es5.js");
-/* harmony import */ var _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @angular/cdk/stepper */ "./node_modules/@angular/cdk/esm5/stepper.es5.js");
-/* harmony import */ var _recaptcha_recaptcha_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./recaptcha/recaptcha.component */ "./src/app/recaptcha/recaptcha.component.ts");
-/* harmony import */ var ngx_captcha__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ngx-captcha */ "./node_modules/ngx-captcha/fesm5/ngx-captcha.js");
-/* harmony import */ var _file_upload_file_upload_module__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./file-upload/file-upload.module */ "./src/app/file-upload/file-upload.module.ts");
-/* harmony import */ var _userform_userform_module__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./userform/userform. module */ "./src/app/userform/userform. module.ts");
-/* harmony import */ var _oauth2_oauth2_module__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./oauth2/oauth2.module */ "./src/app/oauth2/oauth2.module.ts");
-/* harmony import */ var _misc_misc_module__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./misc/misc.module */ "./src/app/misc/misc.module.ts");
-/* harmony import */ var _directive_directive_module__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./directive/directive.module */ "./src/app/directive/directive.module.ts");
-/* harmony import */ var _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./page-not-found/page-not-found.component */ "./src/app/page-not-found/page-not-found.component.ts");
-/* harmony import */ var _global_error_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./global-error.component */ "./src/app/global-error.component.ts");
-/* harmony import */ var _core_core_module__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./core/core.module */ "./src/app/core/core.module.ts");
+/* harmony import */ var _country_country_module__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./country/country.module */ "./src/app/country/country.module.ts");
+/* harmony import */ var _person_person_module__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./person/person.module */ "./src/app/person/person.module.ts");
+/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ag-grid-angular */ "./node_modules/ag-grid-angular/main.js");
+/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(ag_grid_angular__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _table_table_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./table/table.component */ "./src/app/table/table.component.ts");
+/* harmony import */ var _charts_charts_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./charts/charts.component */ "./src/app/charts/charts.component.ts");
+/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/cdk/drag-drop */ "./node_modules/@angular/cdk/esm5/drag-drop.es5.js");
+/* harmony import */ var angular_webstorage_service__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! angular-webstorage-service */ "./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
+/* harmony import */ var _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/cdk/scrolling */ "./node_modules/@angular/cdk/esm5/scrolling.es5.js");
+/* harmony import */ var _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/cdk/stepper */ "./node_modules/@angular/cdk/esm5/stepper.es5.js");
+/* harmony import */ var _recaptcha_recaptcha_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./recaptcha/recaptcha.component */ "./src/app/recaptcha/recaptcha.component.ts");
+/* harmony import */ var ngx_captcha__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ngx-captcha */ "./node_modules/ngx-captcha/fesm5/ngx-captcha.js");
+/* harmony import */ var _file_upload_file_upload_module__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./file-upload/file-upload.module */ "./src/app/file-upload/file-upload.module.ts");
+/* harmony import */ var _userform_userform_module__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./userform/userform. module */ "./src/app/userform/userform. module.ts");
+/* harmony import */ var _oauth2_oauth2_module__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./oauth2/oauth2.module */ "./src/app/oauth2/oauth2.module.ts");
+/* harmony import */ var _misc_misc_module__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./misc/misc.module */ "./src/app/misc/misc.module.ts");
+/* harmony import */ var _directive_directive_module__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./directive/directive.module */ "./src/app/directive/directive.module.ts");
+/* harmony import */ var _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./page-not-found/page-not-found.component */ "./src/app/page-not-found/page-not-found.component.ts");
+/* harmony import */ var _global_error_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./global-error.component */ "./src/app/global-error.component.ts");
+/* harmony import */ var _core_core_module__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./core/core.module */ "./src/app/core/core.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -1051,11 +1037,11 @@ var AppModule = /** @class */ (function () {
                 _aboutus_aboutus_component__WEBPACK_IMPORTED_MODULE_14__["AboutusComponent"],
                 _util_emailValidator__WEBPACK_IMPORTED_MODULE_15__["EmailValidator"],
                 _util_ageValidator__WEBPACK_IMPORTED_MODULE_16__["AgeValidator"],
-                _table_table_component__WEBPACK_IMPORTED_MODULE_21__["TableComponent"],
-                _charts_charts_component__WEBPACK_IMPORTED_MODULE_22__["ChartsComponent"],
-                _global_error_component__WEBPACK_IMPORTED_MODULE_35__["GlobalErrorComponent"],
-                _recaptcha_recaptcha_component__WEBPACK_IMPORTED_MODULE_27__["RecaptchaComponent"],
-                _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_34__["PageNotFoundComponent"]
+                _table_table_component__WEBPACK_IMPORTED_MODULE_20__["TableComponent"],
+                _charts_charts_component__WEBPACK_IMPORTED_MODULE_21__["ChartsComponent"],
+                _global_error_component__WEBPACK_IMPORTED_MODULE_34__["GlobalErrorComponent"],
+                _recaptcha_recaptcha_component__WEBPACK_IMPORTED_MODULE_26__["RecaptchaComponent"],
+                _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_33__["PageNotFoundComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -1063,23 +1049,22 @@ var AppModule = /** @class */ (function () {
                 _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_10__["AppRoutingModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_13__["HttpClientModule"],
-                _blog_website1_blog_website1_module__WEBPACK_IMPORTED_MODULE_17__["BlogWebsite1Module"],
-                _country_country_module__WEBPACK_IMPORTED_MODULE_18__["CountryModule"],
-                _person_person_module__WEBPACK_IMPORTED_MODULE_19__["PersonModule"],
+                _country_country_module__WEBPACK_IMPORTED_MODULE_17__["CountryModule"],
+                _person_person_module__WEBPACK_IMPORTED_MODULE_18__["PersonModule"],
                 //LoginModuleModule,
                 //Angular7ModuleModule,
-                _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_23__["DragDropModule"],
-                angular_webstorage_service__WEBPACK_IMPORTED_MODULE_24__["StorageServiceModule"],
-                _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_25__["ScrollingModule"],
-                ngx_captcha__WEBPACK_IMPORTED_MODULE_28__["NgxCaptchaModule"],
-                ag_grid_angular__WEBPACK_IMPORTED_MODULE_20__["AgGridModule"].withComponents([]),
-                _file_upload_file_upload_module__WEBPACK_IMPORTED_MODULE_29__["FileUploadModule"],
-                _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_26__["CdkStepperModule"],
-                _userform_userform_module__WEBPACK_IMPORTED_MODULE_30__["UserformModule"],
-                _oauth2_oauth2_module__WEBPACK_IMPORTED_MODULE_31__["Oauth2Module"],
-                _misc_misc_module__WEBPACK_IMPORTED_MODULE_32__["MiscModule"],
-                _directive_directive_module__WEBPACK_IMPORTED_MODULE_33__["DirectiveModule"],
-                _core_core_module__WEBPACK_IMPORTED_MODULE_36__["CoreModule"]
+                _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_22__["DragDropModule"],
+                angular_webstorage_service__WEBPACK_IMPORTED_MODULE_23__["StorageServiceModule"],
+                _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_24__["ScrollingModule"],
+                ngx_captcha__WEBPACK_IMPORTED_MODULE_27__["NgxCaptchaModule"],
+                ag_grid_angular__WEBPACK_IMPORTED_MODULE_19__["AgGridModule"].withComponents([]),
+                _file_upload_file_upload_module__WEBPACK_IMPORTED_MODULE_28__["FileUploadModule"],
+                _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_25__["CdkStepperModule"],
+                _userform_userform_module__WEBPACK_IMPORTED_MODULE_29__["UserformModule"],
+                _oauth2_oauth2_module__WEBPACK_IMPORTED_MODULE_30__["Oauth2Module"],
+                _misc_misc_module__WEBPACK_IMPORTED_MODULE_31__["MiscModule"],
+                _directive_directive_module__WEBPACK_IMPORTED_MODULE_32__["DirectiveModule"],
+                _core_core_module__WEBPACK_IMPORTED_MODULE_35__["CoreModule"]
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]],
@@ -1087,151 +1072,6 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/blog-website1/blog-website1.module.ts":
-/*!*******************************************************!*\
-  !*** ./src/app/blog-website1/blog-website1.module.ts ***!
-  \*******************************************************/
-/*! exports provided: BlogWebsite1Module */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlogWebsite1Module", function() { return BlogWebsite1Module; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _body_body_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./body/body.component */ "./src/app/blog-website1/body/body.component.ts");
-/* harmony import */ var _blog_website1_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blog-website1.routing.module */ "./src/app/blog-website1/blog-website1.routing.module.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var BlogWebsite1Module = /** @class */ (function () {
-    function BlogWebsite1Module() {
-    }
-    BlogWebsite1Module = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            imports: [
-                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-                _blog_website1_routing_module__WEBPACK_IMPORTED_MODULE_3__["BlogWebSite1RoutingModule"]
-            ],
-            declarations: [_body_body_component__WEBPACK_IMPORTED_MODULE_2__["BodyComponent"]],
-            exports: [_body_body_component__WEBPACK_IMPORTED_MODULE_2__["BodyComponent"]]
-        })
-    ], BlogWebsite1Module);
-    return BlogWebsite1Module;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/blog-website1/blog-website1.routing.module.ts":
-/*!***************************************************************!*\
-  !*** ./src/app/blog-website1/blog-website1.routing.module.ts ***!
-  \***************************************************************/
-/*! exports provided: BlogWebSite1RoutingModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlogWebSite1RoutingModule", function() { return BlogWebSite1RoutingModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _body_body_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./body/body.component */ "./src/app/blog-website1/body/body.component.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-var routes = [
-    { path: 'blogWebsite1', component: _body_body_component__WEBPACK_IMPORTED_MODULE_3__["BodyComponent"] }
-];
-var BlogWebSite1RoutingModule = /** @class */ (function () {
-    function BlogWebSite1RoutingModule() {
-    }
-    BlogWebSite1RoutingModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            imports: [
-                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(routes)
-            ],
-            declarations: [],
-            exports: [
-                _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]
-            ]
-        })
-    ], BlogWebSite1RoutingModule);
-    return BlogWebSite1RoutingModule;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/blog-website1/body/body.component.css":
-/*!*******************************************************!*\
-  !*** ./src/app/blog-website1/body/body.component.css ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Jsb2ctd2Vic2l0ZTEvYm9keS9ib2R5LmNvbXBvbmVudC5jc3MifQ== */"
-
-/***/ }),
-
-/***/ "./src/app/blog-website1/body/body.component.ts":
-/*!******************************************************!*\
-  !*** ./src/app/blog-website1/body/body.component.ts ***!
-  \******************************************************/
-/*! exports provided: BodyComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BodyComponent", function() { return BodyComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var BodyComponent = /** @class */ (function () {
-    function BodyComponent() {
-    }
-    BodyComponent.prototype.ngOnInit = function () {
-    };
-    BodyComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-body',
-            template: __webpack_require__(/*! raw-loader!./body.component.html */ "./node_modules/raw-loader/index.js!./src/app/blog-website1/body/body.component.html"),
-            styles: [__webpack_require__(/*! ./body.component.css */ "./src/app/blog-website1/body/body.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], BodyComponent);
-    return BodyComponent;
 }());
 
 
@@ -6142,7 +5982,6 @@ var SideBarLinks = [
     { 'name': 'User Form', 'description': 'Contains different User Form', 'routeLink': '/userform' },
     { 'name': 'Country', 'description': 'Contains Country info', 'routeLink': '/country' },
     { 'name': 'Person', 'description': 'Contains Person info', 'routeLink': '/person' },
-    { 'name': 'Blog Website', 'description': 'Contains Blog Website1', 'routeLink': '/blogWebsite1' },
     { 'name': 'Grid[AG-Grid]', 'description': 'Contains Grid related features', 'routeLink': '/table' },
     { 'name': 'Chart', 'description': 'Contains various charts', 'routeLink': '/chart' },
     { 'name': 'File Upload', 'description': 'File Upload Module ', 'routeLink': '/fileUpload' },
