@@ -341,50 +341,6 @@ module.exports = "  <body>\r\n\r\n    <!-- Navigation -->\r\n    <nav class=\"na
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/index.js!./src/app/country/add-country/add-country.component.html":
-/*!******************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/country/add-country/add-country.component.html ***!
-  \******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<h3>Add Country</h3>\r\n<form [formGroup]=\"countryForm\" (ngSubmit)=\"onFormSubmit()\">\r\n   <p> Name: <input formControlName=\"name\"> </p>\r\n   <p> Capital: <input formControlName=\"capital\"> </p>\r\n   <p> Currency: <input formControlName=\"currency\"> </p>\r\n   <p> <button>Add</button> </p>\r\n</form> \r\n"
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/app/country/country-list/country.list.component.html":
-/*!********************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/country/country-list/country.list.component.html ***!
-  \********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<h3>Country List</h3>\r\n<div *ngFor=\"let country of countries | async\" [ngClass]= \"'sub-child-menu'\">\r\n<p>{{country.countryId}}. {{country.countryName}}\r\n\t<a [routerLink]=\"['view', country.countryId]\" routerLinkActive=\"active\">View</a> |\r\n\t<a [routerLink]=\"['edit', country.countryId]\" routerLinkActive=\"active\">Edit</a>\r\n</p>\r\n</div>\r\n<div [ngClass]= \"'sub-child-container'\">\r\n\t<router-outlet></router-outlet>  \r\n</div> \r\n"
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/app/country/country-list/detail/country.detail.component.html":
-/*!*****************************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/country/country-list/detail/country.detail.component.html ***!
-  \*****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<h3>Country Detail </h3>\r\n<div *ngIf=\"country\">\r\n<p><b>Id:</b> {{country.countryId}},  \r\n<b>Name:</b> {{country.countryName}} </p>\r\n<p><b>Capital:</b> {{country.capital}},\r\n<b>Currency:</b> {{country.currency}}</p>\r\n</div>"
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/app/country/country-list/edit/country.edit.component.html":
-/*!*************************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/country/country-list/edit/country.edit.component.html ***!
-  \*************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<h3>Edit Country</h3>\r\n<p *ngIf=\"country\"><b>Country Id: {{country.countryId }} </b></p>\r\n<form [formGroup]=\"countryForm\" (ngSubmit)=\"onFormSubmit()\">\r\n   <p> Name: <input formControlName=\"name\"> </p>\r\n   <p> Capital: <input formControlName=\"capital\"> </p>\r\n   <p> Currency: <input formControlName=\"currency\"> </p>\r\n   <p> <button>Update</button> </p>\r\n</form> \r\n"
-
-/***/ }),
-
 /***/ "./node_modules/raw-loader/index.js!./src/app/dashboard/dashboard.component.html":
 /*!******************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/dashboard/dashboard.component.html ***!
@@ -392,7 +348,7 @@ module.exports = "<h3>Edit Country</h3>\r\n<p *ngIf=\"country\"><b>Country Id: {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"w3-container\">\r\n<p>\r\n    App uses Angular 8.0.3.\r\n    \r\n  </p>\r\n  <p> {{dateMessage}}</p>\r\n{{s}}\r\n<script type=\"text/javascript\" language=\"javascript\" src=\"http://c.amazon-adsystem.com/aax2/assoc.js\"></script>\r\n\r\n<div class=\"w3-container w3-card-4\">\r\n<label>Git Hub User Name </label>\r\n<input type=\"text\" [(ngModel)]=\"userName\" class=\"w3-input w3-border-blue\">\r\n<button (click)=\"search()\" class=\"w3-button w3-blue\">Button</button>\r\n\r\n</div>\r\n\r\n\r\n<div *ngIf=\"response\" class=\"w3-container w3-card-4\">\r\n  <p>Login: {{response.login}}</p>\r\n  <p>URL: {{response.html_url}}</p>\r\n  <p>Followers Url: {{response.followers_url}}</p>\r\n  <p>Subscription Url: {{response.subscriptions_url}}</p>\r\n  <p>Events Url: {{response.events_url}}</p>\r\n  <p>Node Id: {{response.node_id}} </p>\r\n\r\n</div>\r\n<div class=\"w3-section\"></div>\r\n</div>"
+module.exports = "<div class=\"w3-container\">\r\n  \r\n   \r\n\r\n<div id=\"mydiv\"></div>\r\n<p>\r\n    App uses Angular 8.0.3.\r\n    \r\n  </p>\r\n  <p> {{dateMessage}}</p>\r\n{{s}}\r\n<script type=\"text/javascript\" language=\"javascript\" src=\"http://c.amazon-adsystem.com/aax2/assoc.js\"></script>\r\n\r\n<div class=\"w3-container w3-card-4\">\r\n<label>Git Hub User Name </label>\r\n<input type=\"text\" [(ngModel)]=\"userName\" class=\"w3-input w3-border-blue\">\r\n<button (click)=\"search()\" class=\"w3-button w3-blue\">Button</button>\r\n\r\n</div>\r\n\r\n\r\n<div *ngIf=\"response\" class=\"w3-container w3-card-4\">\r\n  <p>Login: {{response.login}}</p>\r\n  <p>URL: {{response.html_url}}</p>\r\n  <p>Followers Url: {{response.followers_url}}</p>\r\n  <p>Subscription Url: {{response.subscriptions_url}}</p>\r\n  <p>Events Url: {{response.events_url}}</p>\r\n  <p>Node Id: {{response.node_id}} </p>\r\n\r\n</div>\r\n<div class=\"w3-section\"></div>\r\n</div>"
 
 /***/ }),
 
@@ -627,28 +583,6 @@ module.exports = "<div class=container>\r\n  <div class=\"row\">\r\n    <p>Page 
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/index.js!./src/app/person/person-list/edit/person.edit.component.html":
-/*!**********************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/person/person-list/edit/person.edit.component.html ***!
-  \**********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<h3>Edit Person</h3>\r\n<p *ngIf=\"person\"><b>Person Id: {{person.personId }} </b></p>\r\n<form [formGroup]=\"personForm\" (ngSubmit)=\"onFormSubmit()\">\r\n   <p> Name: <input formControlName=\"name\"> </p>\r\n   <p> City: <input formControlName=\"city\"> </p>\r\n   <p> <button>Update</button> </p>\r\n</form> \r\n"
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/app/person/person-list/person.list.component.html":
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/person/person-list/person.list.component.html ***!
-  \*****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<h3>Person List</h3>\r\n<div *ngFor=\"let person of persons | async\" [ngClass]= \"'sub-child-menu'\">\r\n<p>{{person.personId}}. {{person.name}}, {{person.city}}\r\n   <button type=\"button\" (click)=\"goToEdit(person)\">Edit</button>\r\n</p>\r\n</div>\r\n<div [ngClass]= \"'sub-child-container'\">\r\n\t<router-outlet></router-outlet>  \r\n</div> \r\n"
-
-/***/ }),
-
 /***/ "./node_modules/raw-loader/index.js!./src/app/recaptcha/recaptcha.component.html":
 /*!******************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/recaptcha/recaptcha.component.html ***!
@@ -854,8 +788,6 @@ var routes = [
     { path: 'book', component: _book_book_component__WEBPACK_IMPORTED_MODULE_4__["BookComponent"] },
     { path: 'aboutus', component: _aboutus_aboutus_component__WEBPACK_IMPORTED_MODULE_5__["AboutusComponent"] },
     { path: 'userform', redirectTo: '/userform', pathMatch: 'full' },
-    { path: 'country', redirectTo: '/country', pathMatch: 'full' },
-    { path: 'person', redirectTo: '/person', pathMatch: 'full' },
     //{path:'login',redirectTo:'/login',pathMatch:'full'},
     { path: 'table', component: _table_table_component__WEBPACK_IMPORTED_MODULE_6__["TableComponent"] },
     { path: 'chart', component: _charts_charts_component__WEBPACK_IMPORTED_MODULE_7__["ChartsComponent"] },
@@ -870,7 +802,9 @@ var routes = [
         path: 'login-basic',
         loadChildren: function () { return Promise.all(/*! import() | authentication-authentication-module */[__webpack_require__.e("common"), __webpack_require__.e("authentication-authentication-module")]).then(__webpack_require__.bind(null, /*! ./authentication/authentication.module */ "./src/app/authentication/authentication.module.ts")).then(function (mod) { return mod.AuthenticationModule; }); }
         //      loadChildren: './authentication/auth.module#AuthModule'
-    }
+    },
+    { path: 'country', loadChildren: function () { return Promise.all(/*! import() | login1-country-country-module */[__webpack_require__.e("common"), __webpack_require__.e("login1-country-country-module")]).then(__webpack_require__.bind(null, /*! ./login1/country/country.module */ "./src/app/login1/country/country.module.ts")).then(function (mod) { return mod.CountryModule; }); } },
+    { path: 'person', loadChildren: function () { return Promise.all(/*! import() | login1-person-person-module */[__webpack_require__.e("common"), __webpack_require__.e("login1-person-person-module")]).then(__webpack_require__.bind(null, /*! ./login1/person/person.module */ "./src/app/login1/person/person.module.ts")).then(function (mod) { return mod.PersonModule; }); } }
     // {path: 'error',component: GlobalErrorComponent},
     //  {path: '**',component: PageNotFoundComponent }	
 ];
@@ -965,34 +899,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _aboutus_aboutus_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./aboutus/aboutus.component */ "./src/app/aboutus/aboutus.component.ts");
 /* harmony import */ var _util_emailValidator__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./util/emailValidator */ "./src/app/util/emailValidator.ts");
 /* harmony import */ var _util_ageValidator__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./util/ageValidator */ "./src/app/util/ageValidator.ts");
-/* harmony import */ var _country_country_module__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./country/country.module */ "./src/app/country/country.module.ts");
-/* harmony import */ var _person_person_module__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./person/person.module */ "./src/app/person/person.module.ts");
-/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ag-grid-angular */ "./node_modules/ag-grid-angular/main.js");
-/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(ag_grid_angular__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _table_table_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./table/table.component */ "./src/app/table/table.component.ts");
-/* harmony import */ var _charts_charts_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./charts/charts.component */ "./src/app/charts/charts.component.ts");
-/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/cdk/drag-drop */ "./node_modules/@angular/cdk/esm5/drag-drop.es5.js");
-/* harmony import */ var angular_webstorage_service__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! angular-webstorage-service */ "./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
-/* harmony import */ var _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/cdk/scrolling */ "./node_modules/@angular/cdk/esm5/scrolling.es5.js");
-/* harmony import */ var _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/cdk/stepper */ "./node_modules/@angular/cdk/esm5/stepper.es5.js");
-/* harmony import */ var _recaptcha_recaptcha_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./recaptcha/recaptcha.component */ "./src/app/recaptcha/recaptcha.component.ts");
-/* harmony import */ var ngx_captcha__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ngx-captcha */ "./node_modules/ngx-captcha/fesm5/ngx-captcha.js");
-/* harmony import */ var _file_upload_file_upload_module__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./file-upload/file-upload.module */ "./src/app/file-upload/file-upload.module.ts");
-/* harmony import */ var _userform_userform_module__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./userform/userform. module */ "./src/app/userform/userform. module.ts");
-/* harmony import */ var _oauth2_oauth2_module__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./oauth2/oauth2.module */ "./src/app/oauth2/oauth2.module.ts");
-/* harmony import */ var _misc_misc_module__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./misc/misc.module */ "./src/app/misc/misc.module.ts");
-/* harmony import */ var _directive_directive_module__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./directive/directive.module */ "./src/app/directive/directive.module.ts");
-/* harmony import */ var _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./page-not-found/page-not-found.component */ "./src/app/page-not-found/page-not-found.component.ts");
-/* harmony import */ var _global_error_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./global-error.component */ "./src/app/global-error.component.ts");
-/* harmony import */ var _core_core_module__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./core/core.module */ "./src/app/core/core.module.ts");
+/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ag-grid-angular */ "./node_modules/ag-grid-angular/main.js");
+/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(ag_grid_angular__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _table_table_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./table/table.component */ "./src/app/table/table.component.ts");
+/* harmony import */ var _charts_charts_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./charts/charts.component */ "./src/app/charts/charts.component.ts");
+/* harmony import */ var _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/cdk/drag-drop */ "./node_modules/@angular/cdk/esm5/drag-drop.es5.js");
+/* harmony import */ var angular_webstorage_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! angular-webstorage-service */ "./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
+/* harmony import */ var _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/cdk/scrolling */ "./node_modules/@angular/cdk/esm5/scrolling.es5.js");
+/* harmony import */ var _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/cdk/stepper */ "./node_modules/@angular/cdk/esm5/stepper.es5.js");
+/* harmony import */ var _recaptcha_recaptcha_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./recaptcha/recaptcha.component */ "./src/app/recaptcha/recaptcha.component.ts");
+/* harmony import */ var ngx_captcha__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ngx-captcha */ "./node_modules/ngx-captcha/fesm5/ngx-captcha.js");
+/* harmony import */ var _file_upload_file_upload_module__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./file-upload/file-upload.module */ "./src/app/file-upload/file-upload.module.ts");
+/* harmony import */ var _userform_userform_module__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./userform/userform. module */ "./src/app/userform/userform. module.ts");
+/* harmony import */ var _oauth2_oauth2_module__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./oauth2/oauth2.module */ "./src/app/oauth2/oauth2.module.ts");
+/* harmony import */ var _misc_misc_module__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./misc/misc.module */ "./src/app/misc/misc.module.ts");
+/* harmony import */ var _directive_directive_module__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./directive/directive.module */ "./src/app/directive/directive.module.ts");
+/* harmony import */ var _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./page-not-found/page-not-found.component */ "./src/app/page-not-found/page-not-found.component.ts");
+/* harmony import */ var _global_error_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./global-error.component */ "./src/app/global-error.component.ts");
+/* harmony import */ var _core_core_module__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./core/core.module */ "./src/app/core/core.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
 
 
 
@@ -1045,11 +975,11 @@ var AppModule = /** @class */ (function () {
                 _aboutus_aboutus_component__WEBPACK_IMPORTED_MODULE_14__["AboutusComponent"],
                 _util_emailValidator__WEBPACK_IMPORTED_MODULE_15__["EmailValidator"],
                 _util_ageValidator__WEBPACK_IMPORTED_MODULE_16__["AgeValidator"],
-                _table_table_component__WEBPACK_IMPORTED_MODULE_20__["TableComponent"],
-                _charts_charts_component__WEBPACK_IMPORTED_MODULE_21__["ChartsComponent"],
-                _global_error_component__WEBPACK_IMPORTED_MODULE_34__["GlobalErrorComponent"],
-                _recaptcha_recaptcha_component__WEBPACK_IMPORTED_MODULE_26__["RecaptchaComponent"],
-                _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_33__["PageNotFoundComponent"]
+                _table_table_component__WEBPACK_IMPORTED_MODULE_18__["TableComponent"],
+                _charts_charts_component__WEBPACK_IMPORTED_MODULE_19__["ChartsComponent"],
+                _global_error_component__WEBPACK_IMPORTED_MODULE_32__["GlobalErrorComponent"],
+                _recaptcha_recaptcha_component__WEBPACK_IMPORTED_MODULE_24__["RecaptchaComponent"],
+                _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_31__["PageNotFoundComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -1057,22 +987,20 @@ var AppModule = /** @class */ (function () {
                 _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_10__["AppRoutingModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_13__["HttpClientModule"],
-                _country_country_module__WEBPACK_IMPORTED_MODULE_17__["CountryModule"],
-                _person_person_module__WEBPACK_IMPORTED_MODULE_18__["PersonModule"],
                 //LoginModuleModule,
                 //Angular7ModuleModule,
-                _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_22__["DragDropModule"],
-                angular_webstorage_service__WEBPACK_IMPORTED_MODULE_23__["StorageServiceModule"],
-                _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_24__["ScrollingModule"],
-                ngx_captcha__WEBPACK_IMPORTED_MODULE_27__["NgxCaptchaModule"],
-                ag_grid_angular__WEBPACK_IMPORTED_MODULE_19__["AgGridModule"].withComponents([]),
-                _file_upload_file_upload_module__WEBPACK_IMPORTED_MODULE_28__["FileUploadModule"],
-                _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_25__["CdkStepperModule"],
-                _userform_userform_module__WEBPACK_IMPORTED_MODULE_29__["UserformModule"],
-                _oauth2_oauth2_module__WEBPACK_IMPORTED_MODULE_30__["Oauth2Module"],
-                _misc_misc_module__WEBPACK_IMPORTED_MODULE_31__["MiscModule"],
-                _directive_directive_module__WEBPACK_IMPORTED_MODULE_32__["DirectiveModule"],
-                _core_core_module__WEBPACK_IMPORTED_MODULE_35__["CoreModule"]
+                _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_20__["DragDropModule"],
+                angular_webstorage_service__WEBPACK_IMPORTED_MODULE_21__["StorageServiceModule"],
+                _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_22__["ScrollingModule"],
+                ngx_captcha__WEBPACK_IMPORTED_MODULE_25__["NgxCaptchaModule"],
+                ag_grid_angular__WEBPACK_IMPORTED_MODULE_17__["AgGridModule"].withComponents([]),
+                _file_upload_file_upload_module__WEBPACK_IMPORTED_MODULE_26__["FileUploadModule"],
+                _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_23__["CdkStepperModule"],
+                _userform_userform_module__WEBPACK_IMPORTED_MODULE_27__["UserformModule"],
+                _oauth2_oauth2_module__WEBPACK_IMPORTED_MODULE_28__["Oauth2Module"],
+                _misc_misc_module__WEBPACK_IMPORTED_MODULE_29__["MiscModule"],
+                _directive_directive_module__WEBPACK_IMPORTED_MODULE_30__["DirectiveModule"],
+                _core_core_module__WEBPACK_IMPORTED_MODULE_33__["CoreModule"]
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]],
@@ -1520,521 +1448,6 @@ var CoreModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/country/add-country/add-country.component.ts":
-/*!**************************************************************!*\
-  !*** ./src/app/country/add-country/add-country.component.ts ***!
-  \**************************************************************/
-/*! exports provided: AddCountryComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddCountryComponent", function() { return AddCountryComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _service_country_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../service/country.service */ "./src/app/country/service/country.service.ts");
-/* harmony import */ var _country__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../country */ "./src/app/country/country.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var AddCountryComponent = /** @class */ (function () {
-    function AddCountryComponent(countryService, route, router) {
-        this.countryService = countryService;
-        this.route = route;
-        this.router = router;
-        this.countryForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroup"]({
-            name: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](),
-            capital: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"](),
-            currency: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]()
-        });
-    }
-    AddCountryComponent.prototype.onFormSubmit = function () {
-        var _this = this;
-        var name = this.countryForm.get('name').value;
-        var capital = this.countryForm.get('capital').value;
-        var currency = this.countryForm.get('currency').value;
-        var country = new _country__WEBPACK_IMPORTED_MODULE_4__["Country"](null, name, capital, currency);
-        this.countryService.addCountry(country)
-            .then(function (data) {
-            return _this.router.navigate(['../list/view', data.countryId], { relativeTo: _this.route });
-        });
-    };
-    AddCountryComponent.ctorParameters = function () { return [
-        { type: _service_country_service__WEBPACK_IMPORTED_MODULE_3__["CountryService"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
-    ]; };
-    AddCountryComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            template: __webpack_require__(/*! raw-loader!./add-country.component.html */ "./node_modules/raw-loader/index.js!./src/app/country/add-country/add-country.component.html")
-        }),
-        __metadata("design:paramtypes", [_service_country_service__WEBPACK_IMPORTED_MODULE_3__["CountryService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
-    ], AddCountryComponent);
-    return AddCountryComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/country/country-list/country.list.component.ts":
-/*!****************************************************************!*\
-  !*** ./src/app/country/country-list/country.list.component.ts ***!
-  \****************************************************************/
-/*! exports provided: CountryListComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountryListComponent", function() { return CountryListComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _service_country_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../service/country.service */ "./src/app/country/service/country.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var CountryListComponent = /** @class */ (function () {
-    function CountryListComponent(countryService) {
-        this.countryService = countryService;
-    }
-    CountryListComponent.prototype.ngOnInit = function () {
-        this.countries = this.countryService.getCountries();
-    };
-    CountryListComponent.ctorParameters = function () { return [
-        { type: _service_country_service__WEBPACK_IMPORTED_MODULE_1__["CountryService"] }
-    ]; };
-    CountryListComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            template: __webpack_require__(/*! raw-loader!./country.list.component.html */ "./node_modules/raw-loader/index.js!./src/app/country/country-list/country.list.component.html")
-        }),
-        __metadata("design:paramtypes", [_service_country_service__WEBPACK_IMPORTED_MODULE_1__["CountryService"]])
-    ], CountryListComponent);
-    return CountryListComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/country/country-list/detail/country.detail.component.ts":
-/*!*************************************************************************!*\
-  !*** ./src/app/country/country-list/detail/country.detail.component.ts ***!
-  \*************************************************************************/
-/*! exports provided: CountryDetailComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountryDetailComponent", function() { return CountryDetailComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _service_country_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../service/country.service */ "./src/app/country/service/country.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-//import 'rxjs/add/operator/switchMap';
-
-var CountryDetailComponent = /** @class */ (function () {
-    function CountryDetailComponent(countryService, route) {
-        this.countryService = countryService;
-        this.route = route;
-    }
-    CountryDetailComponent.prototype.ngOnInit = function () {
-        /*    this.route.params
-             .switchMap((params: Params) => this.countryService.getCountry(+params['country-id']))
-             .subscribe(country => this.country = country);
-         */ 
-    };
-    CountryDetailComponent.ctorParameters = function () { return [
-        { type: _service_country_service__WEBPACK_IMPORTED_MODULE_2__["CountryService"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"] }
-    ]; };
-    CountryDetailComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            template: __webpack_require__(/*! raw-loader!./country.detail.component.html */ "./node_modules/raw-loader/index.js!./src/app/country/country-list/detail/country.detail.component.html")
-        }),
-        __metadata("design:paramtypes", [_service_country_service__WEBPACK_IMPORTED_MODULE_2__["CountryService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"]])
-    ], CountryDetailComponent);
-    return CountryDetailComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/country/country-list/edit/country.edit.component.ts":
-/*!*********************************************************************!*\
-  !*** ./src/app/country/country-list/edit/country.edit.component.ts ***!
-  \*********************************************************************/
-/*! exports provided: CountryEditComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountryEditComponent", function() { return CountryEditComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _service_country_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../service/country.service */ "./src/app/country/service/country.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-//import 'rxjs/add/operator/switchMap';
-
-var CountryEditComponent = /** @class */ (function () {
-    function CountryEditComponent(countryService, route, router) {
-        this.countryService = countryService;
-        this.route = route;
-        this.router = router;
-        this.countryForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]({
-            name: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](),
-            capital: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](),
-            currency: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]()
-        });
-    }
-    CountryEditComponent.prototype.ngOnInit = function () {
-        /*  this.route.params
-           .switchMap((params: Params) => this.countryService.getCountry(+params['country-id']))
-           .subscribe(country => {
-                       this.country = country;
-                       this.setFormValues();
-                   }
-                    );*/
-    };
-    CountryEditComponent.prototype.setFormValues = function () {
-        this.countryForm.setValue({ name: this.country.countryName,
-            capital: this.country.capital, currency: this.country.currency });
-    };
-    CountryEditComponent.prototype.onFormSubmit = function () {
-        var _this = this;
-        this.country.countryName = this.countryForm.get('name').value;
-        this.country.capital = this.countryForm.get('capital').value;
-        this.country.currency = this.countryForm.get('currency').value;
-        this.countryService.updateCountry(this.country)
-            .then(function () {
-            return _this.router.navigate(['../../'], { relativeTo: _this.route });
-        });
-    };
-    CountryEditComponent.ctorParameters = function () { return [
-        { type: _service_country_service__WEBPACK_IMPORTED_MODULE_3__["CountryService"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"] }
-    ]; };
-    CountryEditComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            template: __webpack_require__(/*! raw-loader!./country.edit.component.html */ "./node_modules/raw-loader/index.js!./src/app/country/country-list/edit/country.edit.component.html")
-        }),
-        __metadata("design:paramtypes", [_service_country_service__WEBPACK_IMPORTED_MODULE_3__["CountryService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
-    ], CountryEditComponent);
-    return CountryEditComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/country/country-routing.module.ts":
-/*!***************************************************!*\
-  !*** ./src/app/country/country-routing.module.ts ***!
-  \***************************************************/
-/*! exports provided: CountryRoutingModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountryRoutingModule", function() { return CountryRoutingModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _country_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./country.component */ "./src/app/country/country.component.ts");
-/* harmony import */ var _country_list_country_list_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./country-list/country.list.component */ "./src/app/country/country-list/country.list.component.ts");
-/* harmony import */ var _add_country_add_country_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./add-country/add-country.component */ "./src/app/country/add-country/add-country.component.ts");
-/* harmony import */ var _country_list_detail_country_detail_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./country-list/detail/country.detail.component */ "./src/app/country/country-list/detail/country.detail.component.ts");
-/* harmony import */ var _country_list_edit_country_edit_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./country-list/edit/country.edit.component */ "./src/app/country/country-list/edit/country.edit.component.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-
-
-
-var countryRoutes = [
-    {
-        path: 'country',
-        component: _country_component__WEBPACK_IMPORTED_MODULE_2__["CountryComponent"],
-        children: [
-            {
-                path: 'add',
-                component: _add_country_add_country_component__WEBPACK_IMPORTED_MODULE_4__["AddCountryComponent"]
-            },
-            {
-                path: 'list',
-                component: _country_list_country_list_component__WEBPACK_IMPORTED_MODULE_3__["CountryListComponent"],
-                children: [
-                    {
-                        path: 'view/:country-id',
-                        component: _country_list_detail_country_detail_component__WEBPACK_IMPORTED_MODULE_5__["CountryDetailComponent"]
-                    },
-                    {
-                        path: 'edit/:country-id',
-                        component: _country_list_edit_country_edit_component__WEBPACK_IMPORTED_MODULE_6__["CountryEditComponent"]
-                    },
-                ]
-            }
-        ]
-    }
-];
-var CountryRoutingModule = /** @class */ (function () {
-    function CountryRoutingModule() {
-    }
-    CountryRoutingModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild(countryRoutes)],
-            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
-        })
-    ], CountryRoutingModule);
-    return CountryRoutingModule;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/country/country.component.ts":
-/*!**********************************************!*\
-  !*** ./src/app/country/country.component.ts ***!
-  \**********************************************/
-/*! exports provided: CountryComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountryComponent", function() { return CountryComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var CountryComponent = /** @class */ (function () {
-    function CountryComponent() {
-    }
-    CountryComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            template: "<h2>Welcome to Country Home</h2>\n    <nav [ngClass] = \"'child-menu'\">\n      <ul>\n\t\t<li><a [routerLink]=\"['add']\" routerLinkActive=\"active\">Add Country</a></li>\n\t\t<li><a [routerLink]=\"['list']\" routerLinkActive=\"active\">Country List</a></li>\n      </ul>  \n\t</nav>  \n\t<div [ngClass] = \"'child-container'\">\t\n\t  <router-outlet></router-outlet>\t\n\t</div>\n  "
-        })
-    ], CountryComponent);
-    return CountryComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/country/country.module.ts":
-/*!*******************************************!*\
-  !*** ./src/app/country/country.module.ts ***!
-  \*******************************************/
-/*! exports provided: CountryModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountryModule", function() { return CountryModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _country_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./country.component */ "./src/app/country/country.component.ts");
-/* harmony import */ var _add_country_add_country_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./add-country/add-country.component */ "./src/app/country/add-country/add-country.component.ts");
-/* harmony import */ var _country_list_country_list_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./country-list/country.list.component */ "./src/app/country/country-list/country.list.component.ts");
-/* harmony import */ var _country_list_detail_country_detail_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./country-list/detail/country.detail.component */ "./src/app/country/country-list/detail/country.detail.component.ts");
-/* harmony import */ var _country_list_edit_country_edit_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./country-list/edit/country.edit.component */ "./src/app/country/country-list/edit/country.edit.component.ts");
-/* harmony import */ var _country_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./country-routing.module */ "./src/app/country/country-routing.module.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-
-
-
-
-
-var CountryModule = /** @class */ (function () {
-    function CountryModule() {
-    }
-    CountryModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            imports: [
-                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"],
-                _country_routing_module__WEBPACK_IMPORTED_MODULE_8__["CountryRoutingModule"]
-            ],
-            declarations: [
-                _country_component__WEBPACK_IMPORTED_MODULE_3__["CountryComponent"],
-                _add_country_add_country_component__WEBPACK_IMPORTED_MODULE_4__["AddCountryComponent"],
-                _country_list_country_list_component__WEBPACK_IMPORTED_MODULE_5__["CountryListComponent"],
-                _country_list_edit_country_edit_component__WEBPACK_IMPORTED_MODULE_7__["CountryEditComponent"],
-                _country_list_detail_country_detail_component__WEBPACK_IMPORTED_MODULE_6__["CountryDetailComponent"]
-            ],
-            exports: [_country_component__WEBPACK_IMPORTED_MODULE_3__["CountryComponent"]]
-        })
-    ], CountryModule);
-    return CountryModule;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/country/country.ts":
-/*!************************************!*\
-  !*** ./src/app/country/country.ts ***!
-  \************************************/
-/*! exports provided: Country */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Country", function() { return Country; });
-var Country = /** @class */ (function () {
-    function Country(countryId, countryName, capital, currency) {
-        this.countryId = countryId;
-        this.countryName = countryName;
-        this.capital = capital;
-        this.currency = currency;
-    }
-    Country.ctorParameters = function () { return [
-        { type: Number },
-        { type: String },
-        { type: String },
-        { type: String }
-    ]; };
-    return Country;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/country/service/country.service.ts":
-/*!****************************************************!*\
-  !*** ./src/app/country/service/country.service.ts ***!
-  \****************************************************/
-/*! exports provided: CountryService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CountryService", function() { return CountryService; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _country__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../country */ "./src/app/country/country.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-var COUNTRIES = [
-    new _country__WEBPACK_IMPORTED_MODULE_1__["Country"](1, 'India', 'New Delhi', 'INR'),
-    new _country__WEBPACK_IMPORTED_MODULE_1__["Country"](2, 'China', 'Beijing', 'RMB')
-];
-var countriesPromise = Promise.resolve(COUNTRIES);
-var CountryService = /** @class */ (function () {
-    function CountryService() {
-    }
-    CountryService.prototype.getCountries = function () {
-        return countriesPromise;
-    };
-    CountryService.prototype.getCountry = function (id) {
-        return this.getCountries()
-            .then(function (countries) { return countries.find(function (country) { return country.countryId === id; }); });
-    };
-    CountryService.prototype.updateCountry = function (country) {
-        return this.getCountries()
-            .then(function (countries) {
-            var countryObj = countries.find(function (ob) { return ob.countryId === country.countryId; });
-            countryObj = country;
-            return countryObj;
-        });
-    };
-    CountryService.prototype.addCountry = function (country) {
-        return this.getCountries()
-            .then(function (countries) {
-            var maxIndex = countries.length - 1;
-            var countryWithMaxIndex = countries[maxIndex];
-            country.countryId = countryWithMaxIndex.countryId + 1;
-            countries.push(country);
-            return country;
-        });
-    };
-    CountryService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
-            providedIn: 'root',
-        })
-    ], CountryService);
-    return CountryService;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/dashboard/dashboard.component.css":
 /*!***************************************************!*\
   !*** ./src/app/dashboard/dashboard.component.css ***!
@@ -2059,6 +1472,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var postscribe__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! postscribe */ "./node_modules/postscribe/dist/postscribe.js");
+/* harmony import */ var postscribe__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(postscribe__WEBPACK_IMPORTED_MODULE_3__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2071,6 +1486,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var __param = (undefined && undefined.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
+
 
 
 
@@ -2087,6 +1503,7 @@ var DashboardComponent = /** @class */ (function () {
         }, 1000);
     }
     DashboardComponent.prototype.ngOnInit = function () {
+        postscribe__WEBPACK_IMPORTED_MODULE_3__('#mydiv', "<script type=\"text/javascript\" language=\"javascript\">\n    var aax_size='728x90';\n    var aax_pubname = 'insuredsoftwa-21';\n    var aax_src='302';\n  </script>\n  <script type=\"text/javascript\" language=\"javascript\" src=\"https://c.amazon-adsystem.com/aax2/assoc.js\"></script>");
     };
     DashboardComponent.prototype.search = function () {
         var _this = this;
@@ -2095,6 +1512,8 @@ var DashboardComponent = /** @class */ (function () {
             _this.response = response;
             console.log(_this.response);
         });
+    };
+    DashboardComponent.prototype.ngAfterViewInit = function () {
     };
     DashboardComponent.ctorParameters = function () { return [
         { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] },
@@ -5463,375 +4882,6 @@ var PageNotFoundComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/person/person-list/edit/person.edit.component.ts":
-/*!******************************************************************!*\
-  !*** ./src/app/person/person-list/edit/person.edit.component.ts ***!
-  \******************************************************************/
-/*! exports provided: PersonEditComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PersonEditComponent", function() { return PersonEditComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _service_person_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../service/person.service */ "./src/app/person/service/person.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-//import 'rxjs/add/operator/switchMap';
-
-var PersonEditComponent = /** @class */ (function () {
-    function PersonEditComponent(personService, route, router) {
-        this.personService = personService;
-        this.route = route;
-        this.router = router;
-        this.personForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]({
-            name: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"](),
-            city: new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]()
-        });
-    }
-    PersonEditComponent.prototype.ngOnInit = function () {
-        /*     this.route.params
-              .switchMap((params: Params) => this.personService.getPerson(+params['id']))
-              .subscribe(person => {
-                          this.person = person;
-                          this.setFormValues();
-                      }
-               );
-              */ 
-    };
-    PersonEditComponent.prototype.setFormValues = function () {
-        this.personForm.setValue({ name: this.person.name, city: this.person.city });
-    };
-    PersonEditComponent.prototype.onFormSubmit = function () {
-        var _this = this;
-        this.person.name = this.personForm.get('name').value;
-        this.person.city = this.personForm.get('city').value;
-        this.personService.updatePerson(this.person)
-            .then(function () {
-            return _this.router.navigate(['../'], { relativeTo: _this.route });
-        });
-    };
-    PersonEditComponent.ctorParameters = function () { return [
-        { type: _service_person_service__WEBPACK_IMPORTED_MODULE_3__["PersonService"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"] }
-    ]; };
-    PersonEditComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            template: __webpack_require__(/*! raw-loader!./person.edit.component.html */ "./node_modules/raw-loader/index.js!./src/app/person/person-list/edit/person.edit.component.html")
-        }),
-        __metadata("design:paramtypes", [_service_person_service__WEBPACK_IMPORTED_MODULE_3__["PersonService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
-    ], PersonEditComponent);
-    return PersonEditComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/person/person-list/person.list.component.ts":
-/*!*************************************************************!*\
-  !*** ./src/app/person/person-list/person.list.component.ts ***!
-  \*************************************************************/
-/*! exports provided: PersonListComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PersonListComponent", function() { return PersonListComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _service_person_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../service/person.service */ "./src/app/person/service/person.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var PersonListComponent = /** @class */ (function () {
-    function PersonListComponent(personService, route, router) {
-        this.personService = personService;
-        this.route = route;
-        this.router = router;
-    }
-    PersonListComponent.prototype.ngOnInit = function () {
-        this.persons = this.personService.getPersons();
-    };
-    PersonListComponent.prototype.goToEdit = function (person) {
-        this.router.navigate([person.personId], { relativeTo: this.route });
-    };
-    PersonListComponent.ctorParameters = function () { return [
-        { type: _service_person_service__WEBPACK_IMPORTED_MODULE_2__["PersonService"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"] }
-    ]; };
-    PersonListComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            template: __webpack_require__(/*! raw-loader!./person.list.component.html */ "./node_modules/raw-loader/index.js!./src/app/person/person-list/person.list.component.html")
-        }),
-        __metadata("design:paramtypes", [_service_person_service__WEBPACK_IMPORTED_MODULE_2__["PersonService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
-    ], PersonListComponent);
-    return PersonListComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/person/person-routing.module.ts":
-/*!*************************************************!*\
-  !*** ./src/app/person/person-routing.module.ts ***!
-  \*************************************************/
-/*! exports provided: PersonRoutingModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PersonRoutingModule", function() { return PersonRoutingModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _person_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./person.component */ "./src/app/person/person.component.ts");
-/* harmony import */ var _person_list_person_list_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./person-list/person.list.component */ "./src/app/person/person-list/person.list.component.ts");
-/* harmony import */ var _person_list_edit_person_edit_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./person-list/edit/person.edit.component */ "./src/app/person/person-list/edit/person.edit.component.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-
-var personRoutes = [
-    {
-        path: 'person',
-        component: _person_component__WEBPACK_IMPORTED_MODULE_2__["PersonComponent"],
-        children: [
-            {
-                path: '',
-                component: _person_list_person_list_component__WEBPACK_IMPORTED_MODULE_3__["PersonListComponent"],
-                children: [
-                    {
-                        path: ':id',
-                        component: _person_list_edit_person_edit_component__WEBPACK_IMPORTED_MODULE_4__["PersonEditComponent"]
-                    }
-                ]
-            }
-        ]
-    }
-];
-var PersonRoutingModule = /** @class */ (function () {
-    function PersonRoutingModule() {
-    }
-    PersonRoutingModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild(personRoutes)],
-            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
-        })
-    ], PersonRoutingModule);
-    return PersonRoutingModule;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/person/person.component.ts":
-/*!********************************************!*\
-  !*** ./src/app/person/person.component.ts ***!
-  \********************************************/
-/*! exports provided: PersonComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PersonComponent", function() { return PersonComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var PersonComponent = /** @class */ (function () {
-    function PersonComponent() {
-    }
-    PersonComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            template: "<h2>Welcome to Person Home</h2>\n\t<div [ngClass] = \"'child-container'\">\t\n\t  <router-outlet></router-outlet>\t\n\t</div>\n  "
-        })
-    ], PersonComponent);
-    return PersonComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/person/person.module.ts":
-/*!*****************************************!*\
-  !*** ./src/app/person/person.module.ts ***!
-  \*****************************************/
-/*! exports provided: PersonModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PersonModule", function() { return PersonModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _person_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./person.component */ "./src/app/person/person.component.ts");
-/* harmony import */ var _person_list_person_list_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./person-list/person.list.component */ "./src/app/person/person-list/person.list.component.ts");
-/* harmony import */ var _person_list_edit_person_edit_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./person-list/edit/person.edit.component */ "./src/app/person/person-list/edit/person.edit.component.ts");
-/* harmony import */ var _person_routing_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./person-routing.module */ "./src/app/person/person-routing.module.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-
-
-
-var PersonModule = /** @class */ (function () {
-    function PersonModule() {
-    }
-    PersonModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            imports: [
-                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"],
-                _person_routing_module__WEBPACK_IMPORTED_MODULE_6__["PersonRoutingModule"]
-            ],
-            declarations: [
-                _person_component__WEBPACK_IMPORTED_MODULE_3__["PersonComponent"],
-                _person_list_person_list_component__WEBPACK_IMPORTED_MODULE_4__["PersonListComponent"],
-                _person_list_edit_person_edit_component__WEBPACK_IMPORTED_MODULE_5__["PersonEditComponent"]
-            ],
-            exports: [_person_component__WEBPACK_IMPORTED_MODULE_3__["PersonComponent"]]
-        })
-    ], PersonModule);
-    return PersonModule;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/person/person.ts":
-/*!**********************************!*\
-  !*** ./src/app/person/person.ts ***!
-  \**********************************/
-/*! exports provided: Person */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Person", function() { return Person; });
-var Person = /** @class */ (function () {
-    function Person(personId, name, city) {
-        this.personId = personId;
-        this.name = name;
-        this.city = city;
-    }
-    Person.ctorParameters = function () { return [
-        { type: Number },
-        { type: String },
-        { type: String }
-    ]; };
-    return Person;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/person/service/person.service.ts":
-/*!**************************************************!*\
-  !*** ./src/app/person/service/person.service.ts ***!
-  \**************************************************/
-/*! exports provided: PersonService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PersonService", function() { return PersonService; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _person__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../person */ "./src/app/person/person.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-var PERSONS = [
-    new _person__WEBPACK_IMPORTED_MODULE_1__["Person"](1, 'Mahesh', 'Varanasi'),
-    new _person__WEBPACK_IMPORTED_MODULE_1__["Person"](2, 'Ram', 'Ayodhya'),
-    new _person__WEBPACK_IMPORTED_MODULE_1__["Person"](3, 'Kishna', 'Mathura')
-];
-var personsPromise = Promise.resolve(PERSONS);
-var PersonService = /** @class */ (function () {
-    function PersonService() {
-    }
-    PersonService.prototype.getPersons = function () {
-        return personsPromise;
-    };
-    PersonService.prototype.getPerson = function (id) {
-        return this.getPersons()
-            .then(function (persons) { return persons.find(function (person) { return person.personId === id; }); });
-    };
-    PersonService.prototype.updatePerson = function (person) {
-        return this.getPersons()
-            .then(function (persons) {
-            var personObj = persons.find(function (ob) { return ob.personId === person.personId; });
-            personObj = person;
-            return personObj;
-        });
-    };
-    PersonService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
-            providedIn: 'root',
-        })
-    ], PersonService);
-    return PersonService;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/recaptcha/recaptcha.component.css":
 /*!***************************************************!*\
   !*** ./src/app/recaptcha/recaptcha.component.css ***!
@@ -5988,8 +5038,6 @@ var SideBarLinks = [
     { 'name': 'Hero', 'description': 'Thadfdsfasdfasd', 'routeLink': '/hero' },
     { 'name': 'Book', 'description': 'Contains Books', 'routeLink': '/book' },
     { 'name': 'User Form', 'description': 'Contains different User Form', 'routeLink': '/userform' },
-    { 'name': 'Country', 'description': 'Contains Country info', 'routeLink': '/country' },
-    { 'name': 'Person', 'description': 'Contains Person info', 'routeLink': '/person' },
     { 'name': 'Grid[AG-Grid]', 'description': 'Contains Grid related features', 'routeLink': '/table' },
     { 'name': 'Chart', 'description': 'Contains various charts', 'routeLink': '/chart' },
     { 'name': 'File Upload', 'description': 'File Upload Module ', 'routeLink': '/fileUpload' },

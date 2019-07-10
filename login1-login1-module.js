@@ -178,7 +178,7 @@ var DashboardLayoutComponent = /** @class */ (function () {
     }
     DashboardLayoutComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            template: "\n\t <ul>\n\t <li><a routerLink=\"./article\" routerLinkActive=\"active\" >Article</a></li>\n   <li><a routerLink=\"./address\" routerLinkActive=\"active\">Address</a></li>\n  </ul> \n  <app-basic-logout></app-basic-logout>\n\n  <div [ngClass] = \"'parent-container'\">\t\n\t  <router-outlet></router-outlet>\t\n\t</div>\n  "
+            template: "\n\t <ul>\n\t <li><a routerLink=\"./article\" routerLinkActive=\"active\" >Article</a></li>\n   <li><a routerLink=\"./address\" routerLinkActive=\"active\">Address</a></li>\n   <li><a routerLink=\"/country\" routerLinkActive=\"active\">Country</a></li>\n   <li><a routerLink=\"/person\" routerLinkActive=\"active\">Person</a></li>\n  </ul> \n  <app-basic-logout></app-basic-logout>\n\n  <div [ngClass] = \"'parent-container'\">\t\n\t  <router-outlet></router-outlet>\t\n\t</div>\n  "
         })
     ], DashboardLayoutComponent);
     return DashboardLayoutComponent;
@@ -228,7 +228,7 @@ var routes = [
             {
                 path: 'address',
                 component: _address_address_component__WEBPACK_IMPORTED_MODULE_4__["AddressComponent"]
-            }
+            },
         ]
     }
 ];
@@ -283,7 +283,7 @@ var Login1Module = /** @class */ (function () {
             ],
             imports: [
                 _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-                _login1_routing_module__WEBPACK_IMPORTED_MODULE_2__["Login1RoutingModule"]
+                _login1_routing_module__WEBPACK_IMPORTED_MODULE_2__["Login1RoutingModule"],
             ],
             exports: [_login1_routing_module__WEBPACK_IMPORTED_MODULE_2__["Login1RoutingModule"].components],
             schemas: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["CUSTOM_ELEMENTS_SCHEMA"]]

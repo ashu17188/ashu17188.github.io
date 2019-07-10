@@ -112,6 +112,82 @@ var User = /** @class */ (function () {
 
 
 
+/***/ }),
+
+/***/ "./src/app/login1/can-deactivate-guard.service.ts":
+/*!********************************************************!*\
+  !*** ./src/app/login1/can-deactivate-guard.service.ts ***!
+  \********************************************************/
+/*! exports provided: CanDeactivateGuard */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CanDeactivateGuard", function() { return CanDeactivateGuard; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var CanDeactivateGuard = /** @class */ (function () {
+    function CanDeactivateGuard() {
+    }
+    CanDeactivateGuard.prototype.canDeactivate = function (component, route, state) {
+        var url = state.url;
+        console.log('Url: ' + url);
+        return component.canDeactivate ? component.canDeactivate() : true;
+    };
+    CanDeactivateGuard = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({ providedIn: 'root' })
+    ], CanDeactivateGuard);
+    return CanDeactivateGuard;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/login1/dialog.service.ts":
+/*!******************************************!*\
+  !*** ./src/app/login1/dialog.service.ts ***!
+  \******************************************/
+/*! exports provided: DialogService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DialogService", function() { return DialogService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var DialogService = /** @class */ (function () {
+    function DialogService() {
+    }
+    DialogService.prototype.confirm = function (message) {
+        var confirmation = window.confirm(message || 'Are you sure?');
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(confirmation);
+    };
+    ;
+    DialogService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        })
+    ], DialogService);
+    return DialogService;
+}());
+
+
+
 /***/ })
 
 }]);
