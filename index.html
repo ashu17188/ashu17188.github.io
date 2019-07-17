@@ -19,7 +19,7 @@ body {font-family: "Lato", sans-serif}
 </style>
 <body>
   <app-root></app-root>
-<script src="runtime.17778b189d80673ce0f9.js"></script><script src="polyfills-es5.62748f219d2dbd8e5c34.js" nomodule></script><script src="polyfills.6b60c3f6371b4329c2ff.js"></script><script src="main.2874290a0dfc8af86986.js"></script></body>
+<script src="runtime.1e89c3ca1fb03bc9174a.js"></script><script src="polyfills-es5.62748f219d2dbd8e5c34.js" nomodule></script><script src="polyfills.6b60c3f6371b4329c2ff.js"></script><script src="main.9426853a4aae9178e9c9.js"></script></body>
 <script>
   function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
@@ -34,9 +34,12 @@ body {font-family: "Lato", sans-serif}
 function myFunction(id) {
 		  var x = document.getElementById(id);
 		  if (x.className.indexOf("w3-show") == -1) {
-			x.className += " w3-show";
+      x.className += " w3-show";
+      x.previousElementSibling.className += " w3-black";
 		  } else { 
-			x.className = x.className.replace(" w3-show", "");
+      x.className = x.className.replace(" w3-show", "");
+      x.previousElementSibling.className = 
+  x.previousElementSibling.className.replace("w3-black", "");
 		  }
 		}
 </script>
