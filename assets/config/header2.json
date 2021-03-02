@@ -1,0 +1,17 @@
+{
+    "logo": "Bls Tech",
+    "header": [
+        {
+            "key": "home",
+            "value": "Home"
+        },
+        {
+            "key": "aboutus",
+            "value": "About Us"
+        },
+        {
+            "key": "contactus",
+            "value": "Contact Us"
+        }
+    ]
+}

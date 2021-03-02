@@ -1,0 +1,17 @@
+{
+    "errorTitle":"Angular Website",
+    "errors":[
+        {
+            "status":200,
+            "message":"Operation successful"
+        },
+        {
+            "status":404,
+            "message":"Requested resource not found."
+        },
+        {
+            "status":500,
+            "message":"Internal server occurred."
+        }
+    ]
+}

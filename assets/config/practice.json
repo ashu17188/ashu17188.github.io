@@ -1,0 +1,39 @@
+{
+    "header":[
+        {
+            "key":"name",
+            "value":"Country Name",
+            "imgKey":"flag",
+            "type": "string"
+        },
+        {
+            "key":"area",
+            "value":"Area",
+            "type": "number"
+        },
+        {
+            "key":"population",
+            "value":"Population",
+            "type": "number"
+        }
+    ],
+
+    "customerHeader":[
+        {
+            "key":"name",
+            "value":"Name"
+        },
+        {
+            "key":"country.name",
+            "value":"Country"
+        },
+        {
+            "key":"company",
+            "value":"Company"
+        },
+        {
+            "key":"representative.name",
+            "value":"Representative"
+        }
+    ]
+}
